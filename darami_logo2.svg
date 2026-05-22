@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="46.356117mm"
+   height="20.685518mm"
+   viewBox="0 0 46.356117 20.685518"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="true">
+    <inkscape:grid
+       id="grid2"
+       units="mm"
+       originx="-30.23806"
+       originy="-64.708477"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+    <inkscape:page
+       x="0"
+       y="0"
+       width="46.356117"
+       height="20.685518"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-30.238061,-64.708483)">
+    <path
+       d="m 41.101022,71.961183 c -2.783712,1.854938 -10.86205,2.277478 -10.862961,3.090055 -8.97e-4,0.812578 8.088952,1.231259 10.87433,3.087984 2.788676,1.858919 3.768725,7.248082 4.634011,7.254769 0.865286,0.0065 1.844425,-5.402929 4.637122,-7.263218 2.784521,-1.854841 10.871432,-2.268376 10.87122,-3.079535 -2.1e-4,-0.81115 -7.233922,-0.658407 -10.891291,-3.094867 -3.657371,-2.43646 -3.767561,-7.254255 -4.617051,-7.247886 -0.849491,0.0065 -1.855817,5.393869 -4.64538,7.252698 z"
+       style="fill:#ffffff;fill-opacity:1;stroke-width:2.56149;stroke-linecap:round;stroke-linejoin:round"
+       id="path2"
+       sodipodi:nodetypes="azazazzza"
+       inkscape:export-filename="darami_logo2.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       d="m 52.164961,64.8051 c 0,0 20.400925,8.569348 20.401101,10.156538 1.75e-4,1.587189 -20.401101,10.180255 -20.401101,10.180255 H 76.59418 V 64.8051 Z"
+       style="fill:#ffffff;stroke-width:3.81815;stroke-linecap:round;stroke-linejoin:round"
+       id="path3"
+       sodipodi:nodetypes="czcccc" />
+  </g>
+</svg>

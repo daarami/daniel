@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre mí — Daniel Ramírez | Diseñador y Desarrollador Web en México | Darami</title>
+<meta name="description" content="Conoce a Daniel Ramírez (Darami), diseñador y desarrollador web freelance en Zitácuaro, Michoacán. Branding, desarrollo web y automatización para negocios en México.">
+<link rel="canonical" href="https://darami.xyz/sobre-mi">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Sobre mí — Daniel Ramírez | Darami">
+<meta property="og:description" content="Diseñador y desarrollador web freelance en México. Branding, desarrollo web y automatización para negocios que quieren crecer en serio.">
+<meta property="og:url" content="https://darami.xyz/sobre-mi">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="https://darami.xyz/og.jpg">
+<meta property="og:site_name" content="Darami">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sobre mí — Daniel Ramírez | Darami">
+<meta name="twitter:description" content="Diseñador y desarrollador web freelance en México. Branding, desarrollo web y automatización para negocios.">
+<meta name="twitter:image" content="https://darami.xyz/og.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo_darami.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/logo_darami.png">
+<meta name="theme-color" content="#FF5C1A">
+<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Darami">
+<link rel="manifest" href="img/site.webmanifest">
+
+<!-- JSON-LD Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Daniel Ramírez Valencia",
+  "alternateName": "Darami",
+  "url": "https://darami.xyz",
+  "jobTitle": "Diseñador y Desarrollador Web Freelance",
+  "description": "Diseñador web y desarrollador freelance en Zitácuaro, Michoacán. Especialista en branding, desarrollo web y automatización para negocios en México.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Zitácuaro",
+    "addressRegion": "Michoacán",
+    "addressCountry": "MX"
+  },
+  "sameAs": [
+    "https://instagram.com/daaarami",
+    "https://github.com/daarami"
+  ],
+  "knowsAbout": [
+    "Diseño web",
+    "Desarrollo web",
+    "Branding",
+    "Automatización",
+    "Laravel",
+    "MySQL",
+    "Affinity Designer"
+  ]
+}
+</script>
+
+<!-- JSON-LD ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Darami",
+  "url": "https://darami.xyz",
+  "telephone": "+527151363503",
+  "description": "Desarrollo web, branding y automatización para negocios en México. Daniel Ramírez Valencia, diseñador web freelance en Zitácuaro, Michoacán.",
+  "areaServed": "MX",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Ramírez Valencia"
+  },
+  "serviceType": [
+    "Desarrollo web",
+    "Branding",
+    "Automatización",
+    "Diseño web Michoacán",
+    "Diseño web Zitácuaro"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Zitácuaro",
+    "addressRegion": "Michoacán",
+    "addressCountry": "MX"
+  }
+}
+</script>
+
+<style>
+/* ══════════════════════════════════════════════
+   VARIABLES & RESET — idénticos al index
+══════════════════════════════════════════════ */
+:root{
+  --blk:#0B0B0B;
+  --wht:#F5F2ED;
+  --org:#FF5C1A;
+  --org-dim:rgba(255,92,26,.1);
+  --org-border:rgba(255,92,26,.25);
+  --muted:rgba(245,242,237,.45);
+  --muted2:rgba(245,242,237,.12);
+  --max:1200px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Space Grotesk',sans-serif;
+  background:var(--blk);color:var(--wht);
+  overflow-x:hidden;line-height:1.6;
+}
+.wrap{width:92%;max-width:var(--max);margin:0 auto}
+
+/* ══════════════════════════════════════════════
+   NAV — copiado exacto del index
+══════════════════════════════════════════════ */
+header{
+  position:fixed;top:0;left:0;width:100%;z-index:800;
+  padding:24px 0;transition:padding .4s,background .4s,border-color .4s;
+  border-bottom:1px solid transparent;
+}
+header.scrolled{
+  background:rgba(11,11,11,.92);backdrop-filter:blur(20px);
+  padding:16px 0;border-color:var(--muted2);
+}
+nav{display:flex;justify-content:space-between;align-items:center}
+.nav-logo{
+  font-family:'Montserrat',sans-serif;font-weight:700;font-size:1.3rem;
+  letter-spacing:.5px;color:var(--wht);text-decoration:none;
+  display:flex;align-items:center;gap:10px;
+}
+.nav-logo span{color:var(--org)}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center}
+.nav-links a{
+  color:var(--muted);text-decoration:none;font-size:.78rem;font-weight:500;
+  letter-spacing:.8px;transition:color .2s;
+  font-family:'Space Mono',monospace;text-transform:uppercase;
+}
+.nav-links a:hover,
+.nav-links a.active{color:var(--wht)}
+.nav-links a.active{color:var(--org)}
+.nav-cta{
+  border:1px solid var(--org) !important;color:var(--org) !important;
+  padding:8px 20px;border-radius:2px;transition:background .2s,color .2s !important;
+}
+.nav-cta:hover{background:var(--org) !important;color:var(--blk) !important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:900;background:none;border:none;padding:4px}
+.burger span{display:block;width:24px;height:1.5px;background:var(--wht);transition:all .35s;transform-origin:center}
+.burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-nav{
+  display:none;position:fixed;inset:0;background:var(--blk);z-index:700;
+  flex-direction:column;align-items:center;justify-content:center;gap:36px;
+}
+.mobile-nav.open{display:flex}
+.mobile-nav a{
+  font-family:'Montserrat',sans-serif;font-size:2.2rem;font-weight:800;
+  color:var(--wht);text-decoration:none;letter-spacing:1px;transition:color .2s;
+}
+.mobile-nav a:hover{color:var(--org)}
+
+/* ══════════════════════════════════════════════
+   HERO BG — fondo animado idéntico al index
+══════════════════════════════════════════════ */
+.hero-bg{
+  position:absolute;inset:0;overflow:hidden;z-index:0;
+  background:#07070a;isolation:isolate;
+}
+.hero-bg::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 75% 65% at 72% 45%, rgba(255,92,26,.14) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 55% at 18% 75%, rgba(255,72,10,.06) 0%, transparent 60%),
+    radial-gradient(ellipse 35% 40% at 55% 10%, rgba(255,130,40,.05) 0%, transparent 55%);
+  animation:glow-breathe 9s ease-in-out infinite alternate;
+  will-change:opacity;
+}
+@keyframes glow-breathe{from{opacity:.6}to{opacity:1}}
+.hero-bg::after{
+  content:'';position:absolute;inset:0;pointer-events:none;z-index:10;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:.03;
+}
+.lines-layer{
+  position:absolute;inset:-40%;filter:blur(32px);will-change:contents;
+}
+.line{
+  position:absolute;width:420%;left:-160%;border-radius:999px;will-change:transform;
+}
+.orange{
+  background:linear-gradient(90deg,transparent 0%,rgba(255,80,20,.03) 12%,rgba(255,100,30,.58) 50%,rgba(255,80,20,.03) 88%,transparent 100%);
+}
+.gray{
+  background:linear-gradient(90deg,transparent 0%,rgba(150,140,130,.04) 20%,rgba(170,158,145,.20) 50%,rgba(150,140,130,.04) 80%,transparent 100%);
+}
+.dark{
+  background:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.18) 22%,rgba(0,0,0,.62) 50%,rgba(0,0,0,.18) 78%,transparent 100%);
+}
+.t1{height:120px;top:4%}.t2{height:30px;top:19%}.t3{height:90px;top:33%}
+.t4{height:30px;top:47%}.t5{height:120px;top:57%}.t6{height:30px;top:70%}
+.t7{height:90px;top:82%}.t8{height:120px;top:94%}
+@keyframes d1{from{transform:rotate(-35deg) translate3d(-380px,265px,0)}to{transform:rotate(-35deg) translate3d(380px,-265px,0)}}
+@keyframes d2{from{transform:rotate(-35deg) translate3d(270px,-190px,0)}to{transform:rotate(-35deg) translate3d(-270px,190px,0)}}
+@keyframes d3{from{transform:rotate(-35deg) translate3d(-190px,130px,0)}to{transform:rotate(-35deg) translate3d(190px,-130px,0)}}
+.t1{animation:d1 30s linear infinite alternate}
+.t2{animation:d2 44s linear infinite alternate}
+.t3{animation:d3 27s linear infinite alternate}
+.t4{animation:d1 50s linear infinite reverse alternate}
+.t5{animation:d2 35s linear infinite alternate}
+.t6{animation:d3 56s linear infinite alternate}
+.t7{animation:d1 40s linear infinite alternate}
+.t8{animation:d2 48s linear infinite reverse alternate}
+@media(prefers-reduced-motion:reduce){.line,.hero-bg::before{animation:none}}
+
+/* ══════════════════════════════════════════════
+   SISTEMA BASE — igual al index
+══════════════════════════════════════════════ */
+section.sec{padding:120px 0}
+.mono-label{
+  font-family:'Space Mono',monospace;font-size:.63rem;
+  letter-spacing:3px;text-transform:uppercase;color:var(--org);
+  margin-bottom:20px;display:block;
+}
+.big-title{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:clamp(2.4rem,5vw,4rem);
+  line-height:.95;letter-spacing:-1.5px;margin-bottom:16px;
+}
+.big-title em{
+  font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;
+  color:var(--org);letter-spacing:-2px;
+}
+.btn-org{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--org);color:var(--blk);
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.85rem;
+  padding:14px 28px;border-radius:2px;text-decoration:none;
+  transition:opacity .2s;letter-spacing:.3px;
+}
+.btn-org:hover{opacity:.85}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--wht);font-size:.85rem;font-weight:500;
+  text-decoration:none;border:1px solid var(--muted2);
+  padding:14px 28px;border-radius:2px;transition:border-color .2s;
+}
+.btn-outline:hover{border-color:rgba(245,242,237,.35)}
+
+/* REVEAL */
+.r{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.r.on{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+
+/* WA FLOAT */
+.wa-float{
+  position:fixed;bottom:28px;right:28px;z-index:700;
+  width:52px;height:52px;background:#25d366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;font-size:1.4rem;color:#fff;
+  box-shadow:0 4px 24px rgba(37,211,102,.35);transition:transform .3s;
+}
+.wa-float:hover{transform:scale(1.1)}
+
+/* ══════════════════════════════════════════════
+   HERO — arquitectura editorial nueva
+══════════════════════════════════════════════ */
+#hero-sm{
+  min-height:100dvh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  position:relative;overflow:hidden;
+  align-items:center;
+}
+
+/* Col izquierda */
+.sm-left{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:120px 5% 80px;position:relative;z-index:2;
+}
+.sm-eyebrow{
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  letter-spacing:3px;text-transform:uppercase;color:var(--org);
+  margin-bottom:36px;display:flex;align-items:center;gap:12px;
+}
+.sm-eyebrow::before{content:'';width:28px;height:1px;background:var(--org);display:block}
+.sm-title{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:clamp(2.6rem,5.5vw,5rem);
+  line-height:.92;letter-spacing:-2px;margin-bottom:32px;
+}
+.sm-title em{
+  font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;
+  color:var(--org);letter-spacing:-3px;
+}
+.sm-intro{
+  color:var(--muted);font-size:.9rem;max-width:400px;
+  line-height:1.85;font-weight:300;
+  border-left:1px solid var(--org-border);padding-left:20px;margin-bottom:40px;
+}
+.sm-ctas{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Col derecha — composición de tarjetas flotantes */
+.sm-right{
+  position:relative;z-index:2;
+  display:flex;align-items:center;justify-content:center;
+  padding:140px 5% 80px;
+  min-height:100%;
+}
+.cards-composition{
+  position:relative;width:100%;max-width:380px;height:420px;
+}
+.float-card{
+  position:absolute;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--muted2);
+  border-radius:4px;
+  padding:20px 24px;
+  backdrop-filter:blur(12px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 24px 48px rgba(0,0,0,.5);
+  transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s;
+  cursor:default;
+}
+.float-card:hover{
+  transform:translateY(-6px) scale(1.02) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 32px 64px rgba(0,0,0,.6),0 0 0 1px var(--org-border);
+}
+.fc-label{
+  font-family:'Space Mono',monospace;font-size:.55rem;
+  letter-spacing:3px;text-transform:uppercase;color:var(--org);
+  margin-bottom:8px;
+}
+.fc-val{
+  font-family:'Montserrat',sans-serif;font-weight:800;
+  font-size:1.6rem;letter-spacing:-1px;line-height:1;
+}
+.fc-sub{font-size:.75rem;color:var(--muted);margin-top:4px;font-weight:300}
+.fc-icon{font-size:1.4rem;color:var(--org);margin-bottom:10px}
+
+/* Posiciones individuales */
+.fc-1{top:0;left:0;width:160px;transform:rotate(-3deg)}
+.fc-2{top:20px;right:0;width:180px;transform:rotate(4deg)}
+.fc-3{bottom:80px;left:20px;width:155px;transform:rotate(2deg)}
+.fc-4{bottom:40px;right:10px;width:165px;transform:rotate(-2deg)}
+
+/* Pulso sutil */
+@keyframes fc-float{
+  0%,100%{transform:rotate(-3deg) translateY(0)}
+  50%{transform:rotate(-3deg) translateY(-8px)}
+}
+@keyframes fc-float2{
+  0%,100%{transform:rotate(4deg) translateY(0)}
+  50%{transform:rotate(4deg) translateY(-6px)}
+}
+@keyframes fc-float3{
+  0%,100%{transform:rotate(2deg) translateY(0)}
+  50%{transform:rotate(2deg) translateY(-10px)}
+}
+@keyframes fc-float4{
+  0%,100%{transform:rotate(-2deg) translateY(0)}
+  50%{transform:rotate(-2deg) translateY(-7px)}
+}
+.fc-1{animation:fc-float 6s ease-in-out infinite}
+.fc-2{animation:fc-float2 7s ease-in-out infinite}
+.fc-3{animation:fc-float3 5.5s ease-in-out infinite}
+.fc-4{animation:fc-float4 8s ease-in-out infinite}
+
+/* Línea decorativa entre cards */
+.cards-line{
+  position:absolute;top:50%;left:50%;
+  width:1px;height:120px;margin-top:-60px;margin-left:-0.5px;
+  background:linear-gradient(to bottom,transparent,rgba(255,92,26,.3),transparent);
+  pointer-events:none;
+}
+
+/* ══════════════════════════════════════════════
+   MARQUEE — idéntico al index
+══════════════════════════════════════════════ */
+.marquee-wrap{
+  border-top:1px solid var(--muted2);border-bottom:1px solid var(--muted2);
+  padding:13px 0;overflow:hidden;background:#000;
+}
+.marquee-track{
+  display:flex;gap:48px;white-space:nowrap;
+  animation:mq 22s linear infinite;width:max-content;
+}
+.marquee-wrap:hover .marquee-track{animation-play-state:paused}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq-item{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Space Mono',monospace;font-size:.66rem;
+  letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.28);
+}
+.mq-item i{color:var(--org);font-size:.7rem}
+
+/* ══════════════════════════════════════════════
+   SECCIÓN 1 — MI HISTORIA · Timeline premium
+══════════════════════════════════════════════ */
+#historia{background:#000;position:relative;overflow:hidden;padding:120px 0}
+#historia::before{
+  content:'HISTORIA';position:absolute;
+  right:-5%;top:50%;transform:translateY(-50%);
+  font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(6rem,14vw,12rem);
+  color:rgba(255,255,255,.018);letter-spacing:-4px;pointer-events:none;user-select:none;
+  line-height:1;
+}
+.historia-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;
+}
+
+/* Timeline columna izquierda */
+.timeline{position:relative;padding-left:0}
+.tl-item{
+  display:grid;grid-template-columns:72px 1fr;gap:0;
+  padding-bottom:48px;position:relative;
+}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:'';position:absolute;left:34px;top:44px;
+  width:1px;height:calc(100% - 44px);
+  background:linear-gradient(to bottom,var(--org-border),transparent);
+}
+.tl-item:last-child::before{display:none}
+.tl-year{
+  font-family:'Space Mono',monospace;font-size:.63rem;
+  color:var(--org);letter-spacing:2px;padding-top:2px;
+  position:relative;
+}
+.tl-year::after{
+  content:'';position:absolute;right:-8px;top:6px;
+  width:10px;height:1px;background:var(--org-border);
+}
+.tl-dot{
+  position:absolute;left:26px;top:4px;
+  width:18px;height:18px;border-radius:50%;
+  border:1.5px solid var(--org);background:var(--blk);
+  display:flex;align-items:center;justify-content:center;
+}
+.tl-dot::after{
+  content:'';width:6px;height:6px;border-radius:50%;background:var(--org);
+}
+.tl-content{padding-left:20px}
+.tl-content h4{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:.95rem;margin-bottom:6px;letter-spacing:-.3px;
+}
+.tl-content p{font-size:.8rem;color:var(--muted);font-weight:300;line-height:1.7}
+
+/* Panel visual derecho */
+.historia-panel{
+  position:relative;
+  background:linear-gradient(160deg,rgba(255,92,26,.06) 0%,rgba(255,92,26,.02) 50%,transparent 100%);
+  border:1px solid var(--muted2);border-radius:4px;
+  padding:48px 40px;overflow:hidden;
+}
+.historia-panel::before{
+  content:'12';position:absolute;right:-10px;bottom:-20px;
+  font-family:'Montserrat',sans-serif;font-weight:900;font-size:14rem;
+  color:rgba(255,255,255,.018);letter-spacing:-4px;line-height:1;
+  pointer-events:none;user-select:none;
+}
+.panel-phrase{
+  font-family:'Instrument Serif',serif;font-style:italic;
+  font-size:1.3rem;line-height:1.55;color:var(--wht);
+  border-left:2px solid var(--org);padding-left:22px;
+  margin-bottom:36px;
+}
+.panel-steps{display:flex;flex-direction:column;gap:0}
+.ps-item{
+  display:flex;align-items:center;gap:16px;
+  padding:16px 0;border-bottom:1px solid var(--muted2);
+  transition:padding-left .3s;cursor:default;
+}
+.ps-item:hover{padding-left:8px}
+.ps-item:last-child{border-bottom:none}
+.ps-num{
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  color:var(--org);width:24px;flex-shrink:0;
+}
+.ps-txt{
+  font-size:.85rem;font-weight:400;color:rgba(245,242,237,.75);
+}
+.panel-body-txt{
+  font-size:.85rem;color:var(--muted);line-height:1.9;margin-top:28px;
+  font-weight:300;position:relative;z-index:1;
+}
+/* Elementos decorativos panel */
+.panel-circle{
+  position:absolute;top:24px;right:24px;
+  width:80px;height:80px;border-radius:50%;
+  border:1px dashed rgba(255,92,26,.2);
+  animation:spin 20s linear infinite;
+}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.panel-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--org-border);border-radius:2px;
+  padding:6px 14px;margin-top:20px;
+  font-family:'Space Mono',monospace;font-size:.58rem;
+  color:var(--org);letter-spacing:2px;text-transform:uppercase;
+}
+.panel-badge i{font-size:.75rem}
+
+/* ══════════════════════════════════════════════
+   SECCIÓN 2 — LO QUE ME MUEVE · Manifesto visual
+══════════════════════════════════════════════ */
+#mueve{position:relative;padding:120px 0;overflow:hidden}
+#mueve::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 50% 60% at 20% 50%,rgba(255,92,26,.07) 0%,transparent 65%),
+    radial-gradient(ellipse 40% 40% at 80% 30%,rgba(255,92,26,.04) 0%,transparent 60%);
+}
+
+.mueve-inner{
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+.mueve-left{position:relative}
+.mueve-quote{
+  font-family:'Instrument Serif',serif;font-style:italic;
+  font-size:clamp(1.8rem,3.5vw,2.8rem);
+  line-height:1.2;letter-spacing:-1px;color:var(--wht);
+  margin-bottom:36px;position:relative;z-index:1;
+}
+.mueve-quote span{color:var(--org)}
+.mueve-quote::before{
+  content:'"';
+  font-family:'Instrument Serif',serif;font-size:8rem;
+  color:rgba(255,92,26,.08);
+  position:absolute;top:-40px;left:-20px;line-height:1;
+  pointer-events:none;z-index:0;
+}
+.mueve-body{
+  font-size:.88rem;color:var(--muted);line-height:1.9;
+  font-weight:300;max-width:440px;margin-bottom:32px;
+}
+
+/* Tags flotantes derecha */
+.mueve-right{position:relative;height:380px}
+.mueve-tag{
+  position:absolute;
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  letter-spacing:2px;text-transform:uppercase;
+  border:1px solid var(--muted2);
+  padding:10px 18px;border-radius:2px;
+  color:var(--muted);
+  transition:all .4s cubic-bezier(.16,1,.3,1);
+  cursor:default;background:rgba(255,255,255,.02);
+}
+.mueve-tag:hover{
+  border-color:var(--org-border);color:var(--org);
+  background:var(--org-dim);transform:translateY(-4px) !important;
+}
+.mt-1{top:5%;left:5%;transform:rotate(-3deg)}
+.mt-2{top:20%;right:8%;transform:rotate(4deg)}
+.mt-3{top:42%;left:12%;transform:rotate(-1deg)}
+.mt-4{top:58%;right:5%;transform:rotate(3deg)}
+.mt-5{top:75%;left:30%;transform:rotate(-2deg)}
+.mt-accent{border-color:var(--org-border);color:var(--org)}
+
+.mueve-center-block{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:120px;height:120px;border-radius:50%;
+  border:1px solid var(--muted2);
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;
+  font-family:'Space Mono',monospace;font-size:.5rem;
+  letter-spacing:2px;text-transform:uppercase;
+  color:rgba(255,92,26,.4);
+  background:rgba(255,255,255,.02);
+  backdrop-filter:blur(8px);
+}
+.mueve-center-block strong{
+  font-size:1.1rem;color:var(--org);display:block;
+  font-family:'Montserrat',sans-serif;font-weight:900;letter-spacing:-1px;
+}
+
+/* ══════════════════════════════════════════════
+   SECCIÓN 3 — QUÉ HAGO · Bloques horizontales
+══════════════════════════════════════════════ */
+#servicios-sm{background:#000;padding:120px 0;position:relative}
+#servicios-sm::before{
+  content:'SERVICIOS';position:absolute;
+  left:-2%;top:50%;transform:translateY(-50%);
+  font-family:'Montserrat',sans-serif;font-weight:900;
+  font-size:clamp(5rem,12vw,10rem);
+  color:rgba(255,255,255,.015);letter-spacing:-4px;pointer-events:none;user-select:none;
+  line-height:1;writing-mode:vertical-rl;
+}
+
+.svc-blocks{display:flex;flex-direction:column;gap:0;margin-top:48px}
+.svc-block{
+  display:grid;
+  grid-template-columns:80px 1fr auto 120px;
+  align-items:center;gap:32px;
+  padding:36px 0;
+  border-bottom:1px solid var(--muted2);
+  position:relative;cursor:default;
+  transition:padding-left .35s cubic-bezier(.16,1,.3,1);
+}
+.svc-block::after{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:0;background:var(--org);
+  transition:width .35s cubic-bezier(.16,1,.3,1);
+}
+.svc-block:hover{padding-left:20px}
+.svc-block:hover::after{width:3px}
+.svc-block-icon{
+  width:56px;height:56px;border-radius:2px;
+  border:1px solid var(--muted2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;color:var(--muted);
+  transition:border-color .3s,color .3s,background .3s;
+  flex-shrink:0;
+}
+.svc-block:hover .svc-block-icon{
+  border-color:var(--org-border);color:var(--org);
+  background:var(--org-dim);
+}
+.svc-block-main h3{
+  font-family:'Montserrat',sans-serif;font-weight:800;
+  font-size:clamp(1.2rem,2.2vw,1.7rem);
+  letter-spacing:-.5px;line-height:1;
+  margin-bottom:8px;transition:color .25s;
+}
+.svc-block:hover .svc-block-main h3{color:var(--org)}
+.svc-block-main p{
+  font-size:.83rem;color:var(--muted);font-weight:300;
+  line-height:1.7;max-width:460px;
+}
+.svc-block-benefit{
+  font-family:'Space Mono',monospace;font-size:.63rem;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:rgba(255,92,26,.6);text-align:right;
+  line-height:1.6;padding-left:20px;
+  border-left:1px solid var(--org-border);
+  transition:color .3s;
+}
+.svc-block:hover .svc-block-benefit{color:var(--org)}
+.svc-block-arr{
+  font-size:1.2rem;color:var(--muted);
+  transition:transform .3s,color .3s;
+  text-align:center;
+}
+.svc-block:hover .svc-block-arr{transform:translate(4px,-4px);color:var(--org)}
+
+/* ══════════════════════════════════════════════
+   SECCIÓN 4 — HERRAMIENTAS · Laboratorio
+══════════════════════════════════════════════ */
+#herramientas{padding:120px 0;position:relative;overflow:hidden}
+.lab-intro{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;
+  align-items:start;margin-bottom:64px;
+}
+.lab-quote{
+  font-family:'Instrument Serif',serif;font-style:italic;
+  font-size:1.1rem;line-height:1.7;color:rgba(245,242,237,.7);
+  border-left:2px solid var(--org);padding-left:20px;
+}
+.tools-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+.tool-card{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--muted2);border-radius:4px;
+  padding:28px 22px;position:relative;overflow:hidden;
+  transition:border-color .3s,background .3s,transform .35s cubic-bezier(.16,1,.3,1);
+  cursor:default;
+}
+.tool-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(255,92,26,.05) 0%,transparent 70%);
+  opacity:0;transition:opacity .3s;
+}
+.tool-card:hover{
+  border-color:var(--org-border);
+  background:rgba(255,255,255,.05);
+  transform:translateY(-4px);
+}
+.tool-card:hover::before{opacity:1}
+.tool-cat{
+  font-family:'Space Mono',monospace;font-size:.52rem;
+  letter-spacing:2.5px;text-transform:uppercase;color:var(--org);
+  margin-bottom:12px;display:block;
+}
+.tool-name{
+  font-family:'Montserrat',sans-serif;font-weight:800;
+  font-size:1rem;letter-spacing:-.3px;margin-bottom:8px;
+}
+.tool-desc{
+  font-size:.75rem;color:var(--muted);line-height:1.7;font-weight:300;
+}
+.tool-deco{
+  position:absolute;bottom:12px;right:14px;
+  font-size:1.6rem;color:rgba(255,92,26,.08);
+  transition:color .3s;
+}
+.tool-card:hover .tool-deco{color:rgba(255,92,26,.2)}
+
+/* ══════════════════════════════════════════════
+   SECCIÓN 5 — VALORES · Manifesto emocional
+══════════════════════════════════════════════ */
+#valores{
+  background:#000;padding:120px 0;position:relative;overflow:hidden;
+}
+#valores::before{
+  content:'';position:absolute;
+  top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--org-border),transparent);
+}
+.valores-header{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;
+  align-items:end;margin-bottom:80px;
+}
+.valores-header p{
+  font-size:.9rem;color:var(--muted);line-height:1.85;font-weight:300;
+  max-width:380px;align-self:end;
+}
+.principios{display:flex;flex-direction:column;gap:0}
+.principio{
+  display:grid;grid-template-columns:80px 1fr;gap:24px;
+  align-items:start;padding:36px 0;border-bottom:1px solid var(--muted2);
+  position:relative;transition:padding-left .3s;cursor:default;
+}
+.principio::after{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:0;background:var(--org);
+  transition:width .3s cubic-bezier(.16,1,.3,1);
+}
+.principio:hover{padding-left:16px}
+.principio:hover::after{width:2px}
+.principio:last-child{border-bottom:none}
+.prin-num{
+  font-family:'Montserrat',sans-serif;font-weight:900;
+  font-size:3.5rem;letter-spacing:-3px;line-height:1;
+  color:rgba(255,255,255,.06);padding-top:4px;
+  transition:color .3s;
+}
+.principio:hover .prin-num{color:rgba(255,92,26,.15)}
+.prin-body h4{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:1.2rem;letter-spacing:-.3px;margin-bottom:8px;
+  transition:color .25s;
+}
+.principio:hover .prin-body h4{color:var(--org)}
+.prin-body p{font-size:.83rem;color:var(--muted);line-height:1.8;font-weight:300;max-width:520px}
+
+.valores-final{
+  margin-top:72px;padding:40px 48px;
+  border:1px solid var(--muted2);border-radius:4px;
+  background:linear-gradient(135deg,rgba(255,92,26,.06) 0%,transparent 70%);
+  text-align:center;
+}
+.valores-final p{
+  font-family:'Instrument Serif',serif;font-style:italic;
+  font-size:1.4rem;color:var(--wht);line-height:1.5;
+}
+.valores-final span{color:var(--org)}
+
+/* ══════════════════════════════════════════════
+   SECCIÓN 6 — MI PROCESO · Roadmap
+══════════════════════════════════════════════ */
+#proceso{padding:120px 0;position:relative;overflow:hidden}
+.proceso-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:0;
+  margin-top:56px;
+  position:relative;
+}
+.proceso-grid::before{
+  content:'';position:absolute;
+  top:40px;left:5%;right:5%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--org-border) 20%,var(--org-border) 80%,transparent);
+  pointer-events:none;z-index:0;
+}
+.paso{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;padding:0 16px 0;
+  position:relative;z-index:1;
+}
+.paso-dot{
+  width:82px;height:82px;border-radius:50%;
+  border:1px solid var(--muted2);
+  background:var(--blk);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:24px;position:relative;
+  transition:border-color .3s,background .3s;
+  flex-shrink:0;
+}
+.paso:hover .paso-dot{
+  border-color:var(--org-border);
+  background:var(--org-dim);
+}
+.paso-dot .paso-n{
+  font-family:'Space Mono',monospace;font-size:.65rem;
+  color:var(--org);letter-spacing:2px;
+}
+.paso-dot i{font-size:1.3rem;color:var(--muted);transition:color .3s}
+.paso:hover .paso-dot i{color:var(--org)}
+.paso h4{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:.9rem;letter-spacing:-.2px;margin-bottom:8px;
+  transition:color .25s;
+}
+.paso:hover h4{color:var(--org)}
+.paso p{font-size:.75rem;color:var(--muted);line-height:1.7;font-weight:300}
+
+/* ══════════════════════════════════════════════
+   CTA FINAL
+══════════════════════════════════════════════ */
+.cta-sec{padding:72px 0}
+.cta-inner{
+  border:1px solid var(--muted2);border-radius:4px;
+  padding:80px 72px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:48px;flex-wrap:wrap;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,92,26,.08) 0%,rgba(255,92,26,.02) 50%,transparent 100%);
+}
+.cta-inner::before{
+  content:'DARAMI';position:absolute;right:-10px;bottom:-20px;
+  font-family:'Montserrat',sans-serif;font-weight:900;font-size:9rem;
+  color:rgba(255,255,255,.02);letter-spacing:-4px;line-height:1;
+  pointer-events:none;user-select:none;
+}
+.cta-h{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:.98;letter-spacing:-1.5px;
+  max-width:540px;position:relative;z-index:1;
+}
+.cta-h em{
+  font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;
+  color:var(--org);letter-spacing:-2px;
+}
+.cta-right{display:flex;flex-direction:column;gap:16px;align-items:flex-start;position:relative;z-index:1}
+.cta-sub{font-size:.85rem;color:var(--muted);line-height:1.7;max-width:260px}
+.cta-sticker{
+  position:absolute;top:28px;right:200px;width:76px;height:76px;
+  border-radius:50%;border:1.5px dashed rgba(255,92,26,.22);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Mono',monospace;font-size:.46rem;
+  color:rgba(255,92,26,.28);letter-spacing:1px;text-transform:uppercase;text-align:center;
+  transform:rotate(-12deg);animation:spin 15s linear infinite;
+}
+
+/* ══════════════════════════════════════════════
+   FOOTER — idéntico al index
+══════════════════════════════════════════════ */
+footer{padding:64px 0 36px;border-top:1px solid var(--muted2)}
+.foot-top{
+  display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;
+  margin-bottom:52px;padding-bottom:52px;border-bottom:1px solid var(--muted2);
+}
+.foot-brand .f-logo{
+  font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.7rem;
+  letter-spacing:.5px;color:var(--wht);margin-bottom:14px;display:block;
+}
+.foot-brand .f-logo span{color:var(--org)}
+.foot-brand p{font-size:.82rem;color:var(--muted);line-height:1.75;font-weight:300;max-width:230px;margin-bottom:24px}
+.foot-social-row{display:flex;gap:10px}
+.foot-social-row a{
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--muted2);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted);text-decoration:none;font-size:1rem;
+  transition:color .2s,border-color .2s,background .2s;
+}
+.foot-social-row a:hover{color:var(--org);border-color:var(--org-border);background:var(--org-dim)}
+.foot-col h5{
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin-bottom:20px;
+}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.foot-col ul li{display:flex;align-items:center;gap:8px}
+.foot-col ul li i{font-size:.85rem;color:var(--org);flex-shrink:0}
+.foot-col ul a{
+  color:rgba(245,242,237,.55);text-decoration:none;font-size:.85rem;transition:color .2s;
+}
+.foot-col ul a:hover{color:var(--org)}
+.foot-bottom{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+}
+.foot-copy{font-size:.7rem;color:rgba(245,242,237,.22);font-family:'Space Mono',monospace}
+.foot-domain{
+  font-family:'Space Mono',monospace;font-size:.65rem;
+  color:var(--org);letter-spacing:2px;
+}
+
+/* ══════════════════════════════════════════════
+   SEO TEXT
+══════════════════════════════════════════════ */
+.seo-intro-sm{
+  max-width:700px;color:var(--muted);line-height:1.9;
+  margin-bottom:20px;font-size:.9rem;
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media(max-width:1024px){
+  .historia-grid{grid-template-columns:1fr;gap:48px}
+  .mueve-inner{grid-template-columns:1fr;gap:48px}
+  .mueve-right{height:280px}
+  .mt-1{top:5%;left:2%}.mt-2{top:20%;right:2%}.mt-3{top:42%;left:8%}
+  .mt-4{top:60%;right:2%}.mt-5{top:78%;left:28%}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+  .proceso-grid{grid-template-columns:repeat(3,1fr);gap:32px}
+  .proceso-grid::before{display:none}
+  .paso{padding-bottom:20px}
+  .lab-intro{grid-template-columns:1fr;gap:28px}
+  .valores-header{grid-template-columns:1fr;gap:20px}
+  .svc-block{grid-template-columns:64px 1fr 36px;gap:20px}
+  .svc-block-benefit{display:none}
+}
+
+@media(max-width:768px){
+  /* Hero móvil */
+  #hero-sm{
+    grid-template-columns:1fr;
+    min-height:auto;
+    padding-top:88px;
+  }
+  .sm-left{
+    padding:48px 5% 24px;
+    order:1;
+  }
+  .sm-right{
+    order:2;
+    padding:20px 5% 48px;
+    min-height:320px;
+  }
+  .cards-composition{
+    max-width:100%;
+    height:280px;
+  }
+  .fc-1{top:0;left:0;width:140px}
+  .fc-2{top:10px;right:0;width:155px}
+  .fc-3{bottom:20px;left:10px;width:135px}
+  .fc-4{bottom:0;right:5px;width:145px}
+
+  /* Secciones */
+  section.sec,.cta-sec,
+  #historia,#mueve,#herramientas,#servicios-sm,#valores,#proceso{
+    padding:72px 0;
+  }
+  .proceso-grid{grid-template-columns:repeat(2,1fr);gap:28px}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+  .cta-inner{padding:36px 24px}
+  .cta-sticker{display:none}
+  .cta-inner{flex-direction:column;gap:28px}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .historia-grid{grid-template-columns:1fr;gap:36px}
+  .mueve-right{height:240px}
+  .historia-panel{padding:32px 24px}
+  .valores-final{padding:28px 24px}
+
+  /* Navegación */
+  .nav-links{display:none}
+  .burger{display:flex}
+}
+
+@media(max-width:540px){
+  .tools-grid{grid-template-columns:1fr}
+  .proceso-grid{grid-template-columns:1fr;gap:0}
+  .paso{flex-direction:row;text-align:left;padding:20px 0;border-bottom:1px solid var(--muted2);align-items:flex-start;gap:20px}
+  .paso:last-child{border-bottom:none}
+  .paso-dot{width:52px;height:52px;flex-shrink:0;margin-bottom:0}
+  .foot-top{grid-template-columns:1fr}
+  .svc-block{grid-template-columns:52px 1fr 32px;gap:14px;padding:24px 0}
+  .sm-title{font-size:clamp(2.2rem,9vw,3rem)}
+  .mueve-quote{font-size:clamp(1.5rem,6vw,2rem)}
+  .mueve-right{display:none}
+  .cards-composition{height:240px}
+  .fc-val{font-size:1.3rem}
+  .fc-1,.fc-2,.fc-3,.fc-4{padding:14px 16px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="/" class="nav-logo">
+        <div class="logo-slot"><img src="img/logo_darami.svg" width="32" alt="Logo Darami" style="margin-top:10px;"></div>
+        darami<span>.</span>
+      </a>
+      <ul class="nav-links" id="desk-nav">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="sobre-mi" class="active">Sobre mí</a></li>
+        <li><a href="desarrollo-web-mexico">Desarrollo web</a></li>
+        <li><a href="branding-negocios">Branding</a></li>
+        <li><a href="automatizacion-empresas">Automatización</a></li>
+        <li><a href="casos">Casos</a></li>
+        <li><a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20quiero%20cotizar." target="_blank" class="nav-cta">Cotizar</a></li>
+      </ul>
+      <button class="burger" id="brg" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mob-nav">
+  <a href="/">INICIO</a>
+  <a href="sobre-mi">SOBRE MÍ</a>
+  <a href="casos">CASOS</a>
+  <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20quiero%20cotizar." target="_blank" style="color:var(--org)">COTIZAR ↗</a>
+</div>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero-sm">
+
+  <!-- Fondo animado idéntico al index -->
+  <div class="hero-bg">
+    <div class="lines-layer">
+      <div class="line orange t1"></div>
+      <div class="line dark   t2"></div>
+      <div class="line gray   t3"></div>
+      <div class="line orange t4"></div>
+      <div class="line dark   t5"></div>
+      <div class="line orange t6"></div>
+      <div class="line gray   t7"></div>
+      <div class="line orange t8"></div>
+    </div>
+  </div>
+
+  <!-- Columna izquierda -->
+  <div class="sm-left">
+    <div class="sm-eyebrow r">/ Sobre mí</div>
+    <h1 class="sm-title r d1">
+      No construyo<br>páginas.<br>
+      <em>Construyo<br>herramientas<br>para crecer.</em>
+    </h1>
+    <p class="sm-intro r d2">
+      Daniel Ramírez, diseñador y desarrollador web freelance en Zitácuaro, Michoacán.
+      Trato directo, sistemas reales, sin intermediarios.
+    </p>
+    <div class="sm-ctas r d3">
+      <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20me%20gustaría%20platicar." target="_blank" class="btn-org">
+        <i class="bi bi-whatsapp"></i> Platiquemos
+      </a>
+      <a href="#historia" class="btn-outline">Mi historia</a>
+    </div>
+  </div>
+
+  <!-- Columna derecha — composición de tarjetas -->
+  <div class="sm-right">
+    <div class="cards-composition r d2">
+      <div class="float-card fc-1">
+        <div class="fc-icon"><i class="bi bi-person-workspace"></i></div>
+        <div class="fc-label">Modo</div>
+        <div class="fc-val">Freelance</div>
+        <div class="fc-sub">Trato directo</div>
+      </div>
+      <div class="float-card fc-2">
+        <div class="fc-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <div class="fc-label">Estado</div>
+        <div class="fc-val">Estudiante</div>
+        <div class="fc-sub">Siempre aprendiendo</div>
+      </div>
+      <div class="float-card fc-3">
+        <div class="fc-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+        <div class="fc-label">Edad</div>
+        <div class="fc-val">18 años</div>
+        <div class="fc-sub">12 aprendiendo</div>
+      </div>
+      <div class="float-card fc-4">
+        <div class="fc-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <div class="fc-label">Base</div>
+        <div class="fc-val">México</div>
+        <div class="fc-sub">Michoacán → MX</div>
+      </div>
+      <div class="cards-line"></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="mq-item"><i class="bi bi-dot"></i> Diseño web Michoacán</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Desarrollador web freelance México</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Branding para negocios</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Daniel Ramírez</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Automatización empresarial</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Desarrollo web Zitácuaro</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Darami</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Sistemas digitales a medida</span>
+    <!-- duplicado para loop -->
+    <span class="mq-item"><i class="bi bi-dot"></i> Diseño web Michoacán</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Desarrollador web freelance México</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Branding para negocios</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Daniel Ramírez</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Automatización empresarial</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Desarrollo web Zitácuaro</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Darami</span>
+    <span class="mq-item"><i class="bi bi-dot"></i> Sistemas digitales a medida</span>
+  </div>
+</div>
+
+<!-- ═══════════════ S1: MI HISTORIA ═══════════════ -->
+<section id="historia">
+  <div class="wrap">
+    <span class="mono-label r">/ Mi historia</span>
+    <h2 class="big-title r d1">Doce años<br><em>subiendo de nivel.</em></h2>
+
+    <div class="historia-grid">
+      <!-- Timeline -->
+      <div class="timeline r d2">
+        <div class="tl-item">
+          <span class="tl-year"></span>
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h4>Descubro el diseño</h4>
+            <p>Sin saberlo, empiezo a desarrollar criterio visual. Herramientas simples, curiosidad enorme.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year"></span>
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h4>Herramientas más complejas</h4>
+            <p>Empiezo a experimentar con software más avanzado. El diseño deja de ser juego y se convierte en obsesión.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year"></span>
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h4>Proyectos reales</h4>
+            <p>Primeras entregas con clientes reales. Aprendo que el diseño sin estrategia es decoración.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year"></span>
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h4>Freelance</h4>
+            <p>Hago del trabajo independiente mi modo de vida. Trato directo, proyectos con intención, resultados reales.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-year"></span>
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h4>Desarrollo web, branding y automatización</h4>
+            <p>Sistema completo: diseño, código y automatización para negocios que quieren crecer en México.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel visual -->
+      <div class="historia-panel r d3">
+        <div class="panel-circle"></div>
+        <p class="panel-phrase">
+          "Empecé muy joven, jugando entre herramientas simples, aprendiendo por curiosidad y mejorando poco a poco."
+        </p>
+        <div class="panel-steps">
+          <div class="ps-item">
+            <span class="ps-num">01</span>
+            <span class="ps-txt">Empecé diseñando por curiosidad.</span>
+          </div>
+          <div class="ps-item">
+            <span class="ps-num">02</span>
+            <span class="ps-txt">Aprendí haciendo, no estudiando.</span>
+          </div>
+          <div class="ps-item">
+            <span class="ps-num">03</span>
+            <span class="ps-txt">Evolucioné herramienta por herramienta.</span>
+          </div>
+          <div class="ps-item">
+            <span class="ps-num">04</span>
+            <span class="ps-txt">Hoy convierto ideas en sistemas.</span>
+          </div>
+        </div>
+        <p class="panel-body-txt">
+          A los 14 ya estaba metido de lleno en diseño y programación.
+          Desde entonces he ido subiendo de nivel sin soltar el ritmo.
+          Hoy sigo aprendiendo, pero ya con una base sólida: puedo tomar una idea,
+          darle forma visual, convertirla en sistema y dejarla lista para crecer.
+        </p>
+        <div class="panel-badge"><i class="bi bi-arrow-up-right"></i> Michoacán → México</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ S2: LO QUE ME MUEVE ═══════════════ -->
+<section id="mueve" class="sec">
+  <div class="wrap">
+    <div class="mueve-inner">
+      <!-- Izquierda — texto -->
+      <div class="mueve-left">
+        <span class="mono-label r">/ Lo que me mueve</span>
+        <blockquote class="mueve-quote r d1">
+          "No quiero ser solo quien hace el trabajo.
+          <span>Quiero ser quien empuja el proyecto a su siguiente nivel.</span>"
+        </blockquote>
+        <p class="mueve-body r d2">
+          Me interesan proyectos con intención. Negocios que quieren escalar, marcas que buscan diferenciarse,
+          ideas que merecen un sistema real detrás. No trabajo por horas — trabajo por resultados.
+          Si tu proyecto avanza, el trabajo estuvo bien hecho.
+        </p>
+        <div class="r d3">
+          <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20tengo%20un%20proyecto%20con%20intención." target="_blank" class="btn-outline">
+            Cuéntame tu proyecto <i class="bi bi-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Derecha — tags flotantes -->
+      <div class="mueve-right r d2">
+        <div class="mueve-tag mt-1">Negocio</div>
+        <div class="mueve-tag mt-2 mt-accent">Diseño</div>
+        <div class="mueve-tag mt-3">Tecnología</div>
+        <div class="mueve-tag mt-4">Crecimiento</div>
+        <div class="mueve-tag mt-5">Estrategia</div>
+        <div class="mueve-center-block">
+          <strong>DR</strong>
+          Daniel<br>Ramírez
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ S3: QUÉ HAGO ═══════════════ -->
+<section id="servicios-sm">
+  <div class="wrap">
+    <span class="mono-label r">/ Qué hago</span>
+    <h2 class="big-title r d1">Cuatro formas de<br><em>mover tu negocio.</em></h2>
+
+    <div class="svc-blocks r d2">
+      <div class="svc-block">
+        <div class="svc-block-icon"><i class="bi bi-window-stack"></i></div>
+        <div class="svc-block-main">
+          <h3>Desarrollo web</h3>
+          <p>Landing pages, sitios corporativos, sistemas con bases de datos y apps. Código limpio, SEO real, velocidad que convierte.</p>
+        </div>
+        <div class="svc-block-benefit">Más clientes.<br>Más ventas.</div>
+        <span class="svc-block-arr">↗</span>
+      </div>
+      <div class="svc-block">
+        <div class="svc-block-icon"><i class="bi bi-palette2"></i></div>
+        <div class="svc-block-main">
+          <h3>Branding</h3>
+          <p>Identidad visual completa: logo, paleta, tipografía, piezas para redes. Una marca que posiciona antes de que hablen.</p>
+        </div>
+        <div class="svc-block-benefit">Identidad.<br>Diferenciación.</div>
+        <span class="svc-block-arr">↗</span>
+      </div>
+      <div class="svc-block">
+        <div class="svc-block-icon"><i class="bi bi-cpu"></i></div>
+        <div class="svc-block-main">
+          <h3>Automatización</h3>
+          <p>Bots de WhatsApp, puntos de venta, inventarios, flujos automáticos. Tu negocio trabaja aunque tú no estés.</p>
+        </div>
+        <div class="svc-block-benefit">Menos tiempo.<br>Más escala.</div>
+        <span class="svc-block-arr">↗</span>
+      </div>
+      <div class="svc-block">
+        <div class="svc-block-icon"><i class="bi bi-gear-wide-connected"></i></div>
+        <div class="svc-block-main">
+          <h3>Sistemas personalizados</h3>
+          <p>Paneles admin, CRMs a medida, integraciones con APIs. Soluciones que encajan exactamente a como opera tu negocio.</p>
+        </div>
+        <div class="svc-block-benefit">Exactamente<br>lo que necesitas.</div>
+        <span class="svc-block-arr">↗</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ S4: HERRAMIENTAS ═══════════════ -->
+<section id="herramientas" class="sec">
+  <div class="wrap">
+    <span class="mono-label r">/ El laboratorio</span>
+    <h2 class="big-title r d1">Las herramientas<br><em>del oficio.</em></h2>
+
+    <div class="lab-intro r d2">
+      <div></div>
+      <p class="lab-quote">
+        "La herramienta no hace al creador, pero una buena herramienta evita perder media vida peleándote con el software."
+      </p>
+    </div>
+
+    <div class="tools-grid r d3">
+      <div class="tool-card">
+        <span class="tool-cat">Diseño vectorial</span>
+        <div class="tool-name">Affinity Designer</div>
+        <p class="tool-desc">Diseño de logotipos, identidad visual e ilustración profesional. Alternativa real a Adobe.</p>
+        <i class="bi bi-vector-pen tool-deco"></i>
+      </div>
+      <div class="tool-card">
+        <span class="tool-cat">Diseño vectorial</span>
+        <div class="tool-name">Inkscape</div>
+        <p class="tool-desc">SVGs, iconografía y arte vectorial open source. Potente para proyectos de escala libre.</p>
+        <i class="bi bi-bezier2 tool-deco"></i>
+      </div>
+      <div class="tool-card">
+        <span class="tool-cat">Motion graphics</span>
+        <div class="tool-name">Cavalry</div>
+        <p class="tool-desc">Animación procedural y motion graphics de alto nivel. Para cuando el diseño necesita moverse.</p>
+        <i class="bi bi-play-circle tool-deco"></i>
+      </div>
+      <div class="tool-card">
+        <span class="tool-cat">Desarrollo</span>
+        <div class="tool-name">Visual Studio Code</div>
+        <p class="tool-desc">Entorno de desarrollo principal. Extensiones, atajos y configuración afinada para máxima velocidad.</p>
+        <i class="bi bi-braces tool-deco"></i>
+      </div>
+      <div class="tool-card">
+        <span class="tool-cat">Video & edición</span>
+        <div class="tool-name">CapCut</div>
+        <p class="tool-desc">Edición rápida y profesional de Reels, TikToks y videos promo. Entrega en 24–48h.</p>
+        <i class="bi bi-camera-video tool-deco"></i>
+      </div>
+      <div class="tool-card">
+        <span class="tool-cat">Control de versiones</span>
+        <div class="tool-name">Git</div>
+        <p class="tool-desc">Control absoluto del código. Historial limpio, colaboración segura, despliegues sin miedo.</p>
+        <i class="bi bi-git tool-deco"></i>
+      </div>
+      <div class="tool-card">
+        <span class="tool-cat">Backend</span>
+        <div class="tool-name">Laravel</div>
+        <p class="tool-desc">Framework PHP robusto para sistemas web complejos. APIs, paneles, lógica de negocio escalable.</p>
+        <i class="bi bi-server tool-deco"></i>
+      </div>
+      <div class="tool-card">
+        <span class="tool-cat">Base de datos</span>
+        <div class="tool-name">MySQL</div>
+        <p class="tool-desc">Gestión de datos para sistemas de inventario, puntos de venta y plataformas a medida.</p>
+        <i class="bi bi-database tool-deco"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ S5: VALORES ═══════════════ -->
+<section id="valores">
+  <div class="wrap">
+    <div class="valores-header r">
+      <div>
+        <span class="mono-label">/ Mis principios</span>
+        <h2 class="big-title" style="margin-bottom:0">Lo que no<br><em>está en negociación.</em></h2>
+      </div>
+      <p>
+        Estos cinco principios no son marketing. Son la forma en que trabajo y lo que puedes esperar de mí en cada proyecto, sin importar el tamaño.
+      </p>
+    </div>
+
+    <div class="principios r d1">
+      <div class="principio">
+        <div class="prin-num">01</div>
+        <div class="prin-body">
+          <h4>Trato directo</h4>
+          <p>Sin agencias, sin intermediarios, sin coordinadores innecesarios. Hablas conmigo desde el primer mensaje hasta la entrega final. Así es más rápido, más claro y mejor para todos.</p>
+        </div>
+      </div>
+      <div class="principio">
+        <div class="prin-num">02</div>
+        <div class="prin-body">
+          <h4>Calidad sin concesiones</h4>
+          <p>No entrego algo que no me enorgullezca. Si algo no está bien, lo corrijo. La calidad no es un extra, es el punto de partida.</p>
+        </div>
+      </div>
+      <div class="principio">
+        <div class="prin-num">03</div>
+        <div class="prin-body">
+          <h4>Velocidad real</h4>
+          <p>Los proyectos urgentes se entregan en 24–72h cuando es posible. El resto, con fechas claras desde el inicio. Sin sorpresas, sin esperas innecesarias.</p>
+        </div>
+      </div>
+      <div class="principio">
+        <div class="prin-num">04</div>
+        <div class="prin-body">
+          <h4>Honestidad brutal</h4>
+          <p>Si tu idea necesita ajustes, te lo digo. Si algo no va a funcionar, te lo explico antes de cobrar. Prefiero perder un proyecto que darte algo que no sirve.</p>
+        </div>
+      </div>
+      <div class="principio">
+        <div class="prin-num">05</div>
+        <div class="prin-body">
+          <h4>Crecimiento mutuo</h4>
+          <p>No busco clientes de una sola vez. Quiero ser el aliado digital permanente de tu negocio. Si tú creces, yo crezco. Si el proyecto avanza, el trabajo estuvo bien hecho.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="valores-final r d2">
+      <p>"Si tu negocio avanza, entonces <span>el trabajo estuvo bien hecho.</span>"</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ S6: MI PROCESO ═══════════════ -->
+<section id="proceso" class="sec">
+  <div class="wrap">
+    <span class="mono-label r">/ Cómo trabajamos</span>
+    <h2 class="big-title r d1">Del primer mensaje<br><em>al resultado real.</em></h2>
+
+    <div class="proceso-grid r d2">
+      <div class="paso">
+        <div class="paso-dot">
+          <i class="bi bi-chat-text"></i>
+        </div>
+        <div>
+          <h4>Me cuentas tu idea</h4>
+          <p>Por WhatsApp, sin formularios. En 5 minutos entiendo de qué va el proyecto.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-dot">
+          <i class="bi bi-map"></i>
+        </div>
+        <div>
+          <h4>Planeamos</h4>
+          <p>Propuesta clara: precio, tiempo de entrega y alcance definido. Sin letra pequeña.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-dot">
+          <i class="bi bi-palette"></i>
+        </div>
+        <div>
+          <h4>Diseñamos</h4>
+          <p>Bocetos, estructura visual y propuesta de diseño antes de escribir una línea de código.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-dot">
+          <i class="bi bi-braces"></i>
+        </div>
+        <div>
+          <h4>Construimos</h4>
+          <p>Desarrollo limpio y escalable. Actualizaciones constantes para que siempre sepas cómo va.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-dot">
+          <i class="bi bi-rocket-takeoff"></i>
+        </div>
+        <div>
+          <h4>Lanzamos</h4>
+          <p>Tu proyecto en vivo, optimizado, probado en todos los dispositivos.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-dot">
+          <i class="bi bi-graph-up-arrow"></i>
+        </div>
+        <div>
+          <h4>Mejoramos</h4>
+          <p>Soporte post-entrega incluido. No desaparezco cuando termina el proyecto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CTA FINAL ═══════════════ -->
+<div class="cta-sec">
+  <div class="wrap">
+    <div class="cta-inner r">
+      <div class="cta-sticker">DARAMI · MX<br>2026 ·</div>
+      <h2 class="cta-h">
+        Si llegaste hasta aquí,<br>
+        probablemente podamos<br>
+        <em>crear algo bueno juntos.</em>
+      </h2>
+      <div class="cta-right">
+        <p class="cta-sub">Cuéntame tu idea y vemos cómo convertirla en algo real.</p>
+        <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20de%20sobre%20mí%20y%20quiero%20platicar%20sobre%20mi%20proyecto." target="_blank" class="btn-org" style="font-size:.9rem;padding:18px 36px">
+          <i class="bi bi-whatsapp"></i> Escribir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEO hidden block -->
+<section class="wrap" style="padding-bottom:60px;">
+  <h2 style="display:none;">Daniel Ramírez Valencia — Darami — Diseñador web Michoacán</h2>
+  <p class="seo-intro-sm">
+    Daniel Ramírez Valencia, conocido como Darami, es diseñador y desarrollador web freelance
+    con base en Zitácuaro, Michoacán. Especializado en diseño web para negocios,
+    branding, automatización y desarrollo con Laravel, MySQL y tecnologías modernas.
+    Disponible para proyectos en toda la República Mexicana.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="f-logo">darami<span>.</span></span>
+        <p>Diseño, desarrollo y automatización para negocios en México que quieren crecer en serio.</p>
+        <div class="foot-social-row">
+          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" title="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://wa.me/5217151363503" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" title="Behance"><i class="bi bi-behance"></i></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Navegación</h5>
+        <ul>
+          <li><i class="bi bi-arrow-right-short"></i><a href="/">Inicio</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="sobre-mi">Sobre mí</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="desarrollo-web-mexico">Desarrollo web</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="branding-negocios">Branding</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="automatizacion-empresas">Automatización</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="casos">Casos de estudio</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contacto</h5>
+        <ul>
+          <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/5217151363503" target="_blank">+52 715 136 3503</a></li>
+          <li><i class="bi bi-instagram"></i><a href="https://instagram.com/daaarami" target="_blank">@daaarami</a></li>
+          <li><i class="bi bi-github"></i><a href="https://github.com/daarami" target="_blank">github.com/daarami</a></li>
+          <li><i class="bi bi-geo-alt"></i><a href="https://maps.google.com/?q=Zit%C3%A1cuaro,+Michoac%C3%A1n" target="_blank">Zitácuaro, Michoacán</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 DANIEL RAMÍREZ VALENCIA · TODOS LOS DERECHOS RESERVADOS</span>
+      <span class="foot-domain">darami.xyz</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20quiero%20cotizar." class="wa-float" target="_blank" title="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<script>
+// Header scroll
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>50),{passive:true});
+
+// Burger
+const brg=document.getElementById('brg');
+const mobNav=document.getElementById('mob-nav');
+brg.addEventListener('click',()=>{
+  const open=mobNav.classList.toggle('open');
+  brg.classList.toggle('open',open);
+  document.body.style.overflow=open?'hidden':'';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mobNav.classList.remove('open');
+  brg.classList.remove('open');
+  document.body.style.overflow='';
+}));
+
+// Reveal
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}});
+},{threshold:.05,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+
+// Float cards — pausa animación en hover (overridden via CSS hover)
+// Efecto tilt suave en tarjetas flotantes (solo desktop)
+if(window.innerWidth>768){
+  document.querySelectorAll('.float-card').forEach(card=>{
+    card.addEventListener('mousemove',e=>{
+      const rect=card.getBoundingClientRect();
+      const x=(e.clientX-rect.left)/rect.width-.5;
+      const y=(e.clientY-rect.top)/rect.height-.5;
+      card.style.transform=`rotate(${card.dataset.baseRot||0}deg) perspective(600px) rotateX(${-y*8}deg) rotateY(${x*8}deg) translateY(-8px) scale(1.03)`;
+    });
+    card.addEventListener('mouseleave',()=>{
+      card.style.transform='';
+    });
+  });
+}
+</script>
+</body>
+</html>

@@ -1,1284 +1,1223 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Ramírez Valencia — Desarrollo Web, Diseño Gráfico, Edición de Video y Automatización para negocios en Michoacán y toda la República Mexicana.">
-    <title>Darami | Diseño · Desarrollo web · Video</title>
-    <link rel="icon" href="darami_logo2.svg" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desarrollo Web, Branding y Automatización en México | Darami</title>
+<meta name="description" content="Desarrollo de páginas web, branding, diseño y automatización para negocios en México. Sitios rápidos, modernos y optimizados para SEO. Darami (Daniel Ramírez).">
+<meta property="og:title" content="Darami — Daniel Ramírez">
+<meta property="og:description" content="Desarrollo de páginas web, branding, diseño y automatización para negocios en México. Sitios rápidos, modernos y optimizados para SEO. Darami (Daniel Ramírez).">
+<meta property="og:url" content="https://darami.xyz">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://darami.xyz/og.jpg">
+<meta property="og:site_name" content="Darami">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <style>
-        :root {
-            --bg: #080808;
-            --bg-2: #0f0f0f;
-            --bg-3: #161616;
-            --text: #f0ede8;
-            --muted: #7a776f;
-            --accent: #e8c547;
-            --accent-dim: rgba(232, 197, 71, 0.12);
-            --accent-border: rgba(232, 197, 71, 0.25);
-            --green: #4ade80;
-            --r: 10px;
-            --max: 1180px;
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo_darami.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/logo_darami.png">
+<meta name="theme-color" content="#FF5C1A">
+<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+<link rel="shortcut icon" href="img/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Darami" />
+<link rel="manifest" href="img/site.webmanifest" />
 
-            /* Mobile spacing system */
-            --space-xs: 8px;
-            --space-sm: 16px;
-            --space-md: 24px;
-            --space-lg: 40px;
-            --space-xl: 64px;
-            --touch-min: 48px;
-        }
+<link rel="shortcut icon" href="img/logo_darami.png">
 
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+<meta name="theme-color" content="#FF5C1A">
 
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            overflow-x: hidden;
-            line-height: 1.65;
-            -webkit-font-smoothing: antialiased;
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Darami",
+  "url": "https://darami.xyz",
+  "telephone":"+527151363503",
+  "description": "Desarrollo web, branding y automatización para negocios en México.",
+  "areaServed": "MX",
+  "founder": "Daniel Ramírez",
+  "serviceType": [
+    "Desarrollo web",
+    "Branding",
+    "Automatización",
+    "Diseño"
+  ]
+  "address":{
+    "@type":"PostalAddress",
+    "addressLocality":"Zitácuaro",
+    "addressRegion":"Michoacán",
+    "addressCountry":"MX"
+  }
+}
+</script>
 
-        /* GRAIN OVERLAY — fixed, pointer-events-none, no GPU scroll repaint */
-        body::before {
-            content: '';
-            position: fixed;
-            inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-            opacity: 0.03;
-            pointer-events: none;
-            z-index: 9999;
-        }
+<style>
+:root{
+  --blk:#0B0B0B;
+  --wht:#F5F2ED;
+  --org:#FF5C1A;
+  --org-dim:rgba(255,92,26,.1);
+  --org-border:rgba(255,92,26,.25);
+  --muted:rgba(245,242,237,.45);
+  --muted2:rgba(245,242,237,.12);
+  --max:1200px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Space Grotesk',sans-serif;
+  background:var(--blk);color:var(--wht);
+  overflow-x:hidden;line-height:1.6;
+}
+/* body::before eliminado — la textura de ruido ahora vive solo dentro
+   de .hero-bg::after para no crear un layer fixed de compositing en toda la página */
+.wrap{width:92%;max-width:var(--max);margin:0 auto}
 
-        .wrap { width: 92%; max-width: var(--max); margin: 0 auto; }
+/* ── NAV ── */
+header{
+  position:fixed;top:0;left:0;width:100%;z-index:800;
+  padding:24px 0;transition:padding .4s,background .4s,border-color .4s;
+  border-bottom:1px solid transparent;
+}
+header.scrolled{
+  background:rgba(11,11,11,.92);backdrop-filter:blur(20px);
+  padding:16px 0;border-color:var(--muted2);
+}
+nav{display:flex;justify-content:space-between;align-items:center}
+.nav-logo{
+  font-family:'Montserrat',sans-serif;font-weight:700;font-size:1.3rem;
+  letter-spacing:.5px;color:var(--wht);text-decoration:none;
+  display:flex;align-items:center;gap:10px;
+}
+.nav-logo span{color:var(--org)}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center}
+.nav-links a{
+  color:var(--muted);text-decoration:none;font-size:.78rem;font-weight:500;
+  letter-spacing:.8px;transition:color .2s;
+  font-family:'Space Mono',monospace;text-transform:uppercase;
+}
+.nav-links a:hover{color:var(--wht)}
+.nav-cta{
+  border:1px solid var(--org) !important;color:var(--org) !important;
+  padding:8px 20px;border-radius:2px;transition:background .2s,color .2s !important;
+}
+.nav-cta:hover{background:var(--org) !important;color:var(--blk) !important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:900;background:none;border:none;padding:4px}
+.burger span{display:block;width:24px;height:1.5px;background:var(--wht);transition:all .35s;transform-origin:center}
+.burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-nav{
+  display:none;position:fixed;inset:0;background:var(--blk);z-index:700;
+  flex-direction:column;align-items:center;justify-content:center;gap:36px;
+}
+.mobile-nav.open{display:flex}
+.mobile-nav a{
+  font-family:'Montserrat',sans-serif;font-size:2.2rem;font-weight:800;
+  color:var(--wht);text-decoration:none;letter-spacing:1px;transition:color .2s;
+}
+.mobile-nav a:hover{color:var(--org)}
 
-        /* ── NAV ── */
-        header {
-            position: fixed; top: 0; left: 0; width: 100%;
-            z-index: 150;
-            padding: 18px 0;
-            transition: background 0.4s, padding 0.4s;
-        }
-        header.scrolled {
-            background: rgba(8,8,8,0.94);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
-            padding: 12px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
-        }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        .logo {
-            font-family: 'Syne', sans-serif;
-            font-weight: 800;
-            font-size: 1.1rem;
-            color: var(--text);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .logo span { color: var(--accent); }
-        .nav-links { display: flex; gap: 36px; list-style: none; }
-        .nav-links a {
-            color: var(--muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.25s;
-            letter-spacing: 0.2px;
-        }
-        .nav-links a:hover { color: var(--text); }
-        .nav-cta {
-            background: var(--accent);
-            color: #000 !important;
-            padding: 9px 22px;
-            border-radius: 50px;
-            font-weight: 700 !important;
-            font-size: 0.85rem !important;
-            transition: opacity 0.25s !important;
-            min-height: var(--touch-min);
-            display: inline-flex !important;
-            align-items: center !important;
-        }
-        .nav-cta:hover { opacity: 0.85; color: #000 !important; }
-        .burger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 10px;
-            margin-right: -10px;
-            min-width: var(--touch-min);
-            min-height: var(--touch-min);
-            align-items: center;
-            justify-content: center;
-        }
-        .burger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
+/* ── HERO ── */
+#hero{
+  height:100vh;min-height:600px;
+  display:grid;grid-template-columns:1fr 1fr;
+  position:relative;overflow:hidden;
+}
+.hero-grad{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 60% 70% at 75% 50%,rgba(255,92,26,.17) 0%,transparent 65%),
+    radial-gradient(ellipse 40% 50% at 85% 80%,rgba(255,140,60,.09) 0%,transparent 60%),
+    radial-gradient(ellipse 30% 40% at 15% 20%,rgba(255,92,26,.05) 0%,transparent 60%);
+}
+.hero-left{
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:0 0 72px 5%;position:relative;z-index:2;
+}
+.hero-eyebrow{
+  font-family:'Space Mono',monospace;font-size:.62rem;
+  letter-spacing:3px;text-transform:uppercase;color:var(--org);
+  margin-bottom:28px;display:flex;align-items:center;gap:10px;
+}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--org);display:block}
+.hero-name{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:clamp(3.5rem,7vw,6.5rem);
+  line-height:.9;letter-spacing:-2px;margin-bottom:-15px;
+}
+.hero-name-sub{
+  font-family:'Instrument Serif',serif;font-style:italic;
+  font-size:clamp(3rem,6vw,5.8rem);
+  line-height:.9;letter-spacing:-1px;color:var(--org);margin-bottom:40px;
+}
+.hero-desc{
+  color:var(--muted);font-size:.88rem;max-width:340px;
+  line-height:1.8;font-weight:300;
+  border-left:1px solid var(--org-border);padding-left:20px;margin-bottom:40px;
+}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn-org{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--org);color:var(--blk);
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.85rem;
+  padding:14px 28px;border-radius:2px;text-decoration:none;
+  transition:opacity .2s;letter-spacing:.3px;
+}
+.btn-org:hover{opacity:.85}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--wht);font-size:.85rem;font-weight:500;
+  text-decoration:none;border:1px solid var(--muted2);
+  padding:14px 28px;border-radius:2px;transition:border-color .2s;
+}
+.btn-outline:hover{border-color:rgba(245,242,237,.35)}
+.hero-right{
+  position:relative;z-index:2;overflow:hidden;
+}
+.hero-img-slot{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:12px;
+}
+.hero-img-slot video{width:50%;height:auto;display:block}
+.hero-img-slot p{
+  font-family:'Space Mono',monospace;font-size:.62rem;
+  color:rgba(255,255,255,.18);letter-spacing:2px;text-transform:uppercase;text-align:center;line-height:2;
+}
+.sticker-slot{
+  position:absolute;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:4px;
+  font-family:'Space Mono',monospace;font-size:.52rem;
+  color:var(--org-border);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:8px;
+}
+.sticker-slot.s1{width:100px;height:100px;top:60px;right:30px;transform:rotate(8deg)}
+.sticker-slot.s2{width:80px;height:80px;top:200px;left:50px;transform:rotate(-5deg)}
+.sticker-slot.s3{width:90px;height:70px;bottom:140px;right:60px;transform:rotate(3deg)}
+.firma-slot{
+  position:absolute;bottom:50px;left:24px;
+  font-family:'Space Mono',monospace;font-size:.58rem;
+  color:rgba(255,92,26,.4);letter-spacing:2px;text-transform:uppercase;
+}
+.hero-nav-bottom{
+  position:absolute;bottom:0;left:0;right:0;z-index:3;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 5%;border-top:1px solid var(--muted2);
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  color:var(--muted);letter-spacing:2px;text-transform:uppercase;
+}
 
-        /* Mobile nav menu — fullscreen overlay */
-        .nav-links.open .nav-cta {
-            background: var(--accent);
-            color: #000 !important;
-            padding: 16px 40px;
-            border-radius: 50px;
-            font-size: 1.1rem !important;
-        }
+/* ── MARQUEE ── */
+.marquee-wrap{
+  border-top:1px solid var(--muted2);border-bottom:1px solid var(--muted2);
+  padding:13px 0;overflow:hidden;background:#000;
+}
+.marquee-track{
+  display:flex;gap:48px;white-space:nowrap;
+  animation:mq 22s linear infinite;width:max-content;
+}
+.marquee-wrap:hover .marquee-track{animation-play-state:paused}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq-item{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Space Mono',monospace;font-size:.66rem;
+  letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.28);
+}
+.mq-item i{color:var(--org);font-size:.7rem}
 
-        /* MOBILE MENU OVERLAY — elemento independiente del header */
-        .mobile-menu {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            height: 100dvh;
-            background: #080808;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            z-index: 200;
-        }
-        .mobile-menu.open { display: flex; }
-        .mobile-menu a {
-            color: var(--text);
-            text-decoration: none;
-            font-family: 'Syne', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            padding: 12px 32px;
-            min-height: 60px;
-            display: flex;
-            align-items: center;
-            transition: color 0.2s;
-        }
-        .mobile-menu a:hover { color: var(--accent); }
-        .mobile-menu .nav-cta-mobile {
-            margin-top: 16px;
-            background: var(--accent);
-            color: #000 !important;
-            font-size: 1.1rem !important;
-            border-radius: 50px;
-            padding: 16px 40px !important;
-        }
+/* ── SECTION BASE ── */
+section.sec{padding:120px 0}
+.mono-label{
+  font-family:'Space Mono',monospace;font-size:.63rem;
+  letter-spacing:3px;text-transform:uppercase;color:var(--org);
+  margin-bottom:20px;display:block;
+}
+.big-title{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:clamp(2.4rem,5vw,4rem);
+  line-height:.95;letter-spacing:-1.5px;margin-bottom:16px;
+}
+.big-title em{
+  font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;
+  color:var(--org);letter-spacing:-2px;
+}
 
+/* ── SERVICIOS — Lista con image hover ── */
+#servicios{background:#000;position:relative}
+.svc-list{border-top:1px solid var(--muted2);position:relative}
 
-        #hero {
-            min-height: 100dvh;
-            display: flex;
-            align-items: center;
-            padding: 100px 0 72px;
-            position: relative;
-            overflow: hidden;
-        }
+/* Imagen flotante que sigue al hover */
+.svc-hover-img{
+  position:fixed;
+  width:320px;height:220px;
+  border-radius:4px;overflow:hidden;
+  pointer-events:none;z-index:600;
+  opacity:0;transform:scale(.92) rotate(-2deg);
+  transition:opacity .3s cubic-bezier(.16,1,.3,1),transform .3s cubic-bezier(.16,1,.3,1);
+  border:1px solid var(--muted2);
+  box-shadow:0 24px 64px rgba(0,0,0,.7);
+}
+.svc-hover-img.visible{opacity:1;transform:scale(1) rotate(0deg)}
+.svc-hover-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.75)}
+.svc-hover-img .svc-img-label{
+  position:absolute;bottom:12px;left:16px;
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  letter-spacing:2px;text-transform:uppercase;color:var(--org);
+}
 
-        .hero-glow {
-            position: absolute;
-            width: 500px; height: 500px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(232,197,71,0.08) 0%, transparent 70%);
-            top: -80px; right: -160px;
-            pointer-events: none;
-        }
-        .hero-glow-2 {
-            position: absolute;
-            width: 350px; height: 350px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(74,222,128,0.05) 0%, transparent 70%);
-            bottom: 40px; left: -120px;
-            pointer-events: none;
-        }
+.svc-row{
+  display:grid;
+  grid-template-columns:72px 1fr 180px 48px;
+  align-items:center;gap:32px;
+  padding:28px 0;border-bottom:1px solid var(--muted2);
+  cursor:default;position:relative;transition:padding-left .3s;
+}
+.svc-row::after{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:0;
+  background:var(--org);transition:width .3s cubic-bezier(.16,1,.3,1);
+}
+.svc-row:hover{padding-left:16px}
+.svc-row:hover::after{width:3px}
+.svc-num{
+  font-family:'Space Mono',monospace;font-size:.63rem;
+  letter-spacing:2px;color:var(--muted);transition:color .25s;
+}
+.svc-row:hover .svc-num{color:var(--org)}
+.svc-main h3{
+  font-family:'Montserrat',sans-serif;font-weight:800;
+  font-size:clamp(1.3rem,2.5vw,2rem);
+  letter-spacing:-0.5px;line-height:1;transition:color .25s;margin-bottom:8px;
+}
+.svc-row:hover .svc-main h3{color:var(--org)}
+.svc-main p{font-size:.83rem;color:var(--muted);font-weight:300;line-height:1.7;max-width:480px}
+.svc-tags-col{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.tag{
+  font-family:'Space Mono',monospace;font-size:.58rem;
+  border:1px solid var(--muted2);color:var(--muted);
+  padding:3px 10px;border-radius:1px;letter-spacing:.5px;
+  transition:border-color .2s,color .2s;
+}
+.svc-row:hover .tag{border-color:var(--org-border);color:rgba(245,242,237,.65)}
+.svc-arr{
+  font-size:1.3rem;color:var(--muted);
+  transition:transform .3s,color .3s;text-align:center;
+}
+.svc-row:hover .svc-arr{transform:translate(4px,-4px);color:var(--org)}
 
-        .hero-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--accent-dim);
-            border: 1px solid var(--accent-border);
-            color: var(--accent);
-            font-size: 0.78rem;
-            font-weight: 600;
-            padding: 7px 16px;
-            border-radius: 50px;
-            letter-spacing: 0.6px;
-            text-transform: uppercase;
-            margin-bottom: 24px;
-        }
-        .hero-eyebrow::before {
-            content: '';
-            width: 6px; height: 6px;
-            border-radius: 50%;
-            background: var(--accent);
-            animation: blink 2s infinite;
-            flex-shrink: 0;
-        }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
+/* ── CASOS — Grid asimétrico ── */
+#casos{position:relative}
+.cases-header{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  margin-bottom:48px;flex-wrap:wrap;gap:24px;
+}
+.cases-asym{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:auto auto;
+  gap:12px;
+}
+/* Distribución asimétrica */
+.ca-1{grid-column:1/3;grid-row:1/2;aspect-ratio:16/9}   /* grande izq */
+.ca-2{grid-column:3/4;grid-row:1/2;aspect-ratio:3/4}    /* tall derecho */
+.ca-3{grid-column:1/2;grid-row:2/3;aspect-ratio:4/5}    /* tall izq */
+.ca-4{grid-column:2/4;grid-row:2/3;aspect-ratio:16/8}   /* wide derecho */
 
-        .hero-title {
-            font-family: 'Syne', sans-serif;
-            font-size: clamp(2.6rem, 11vw, 5.5rem);
-            font-weight: 800;
-            line-height: 1.0;
-            letter-spacing: -2px;
-            margin-bottom: 24px;
-        }
-        .hero-title .line { display: block; overflow: hidden; }
-        .hero-title em { font-style: normal; color: var(--accent); }
+.case-card{
+  border-radius:4px;overflow:hidden;position:relative;
+  background:#111;border:1px solid var(--muted2);
+  cursor:pointer;transition:border-color .35s;display:block;
+  text-decoration:none;
+}
+.case-card:hover{border-color:rgba(255,92,26,.4)}
+.case-img-slot{width:100%;height:100%;position:relative;background:linear-gradient(135deg,#141414,#0d0d0d)}
+.case-img-slot img{
+  width:100%;height:100%;object-fit:cover;
+  filter:brightness(.55) saturate(.7);
+  transition:transform .9s cubic-bezier(.16,1,.3,1),filter .6s;
+  position:absolute;inset:0;
+}
+.case-card:hover .case-img-slot img{transform:scale(1.06);filter:brightness(.3) saturate(.5)}
+.case-placeholder-icon{font-size:3rem;color:rgba(255,255,255,.04);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.case-info{
+  position:absolute;inset:0;padding:24px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  background:linear-gradient(to top,rgba(11,11,11,.95) 0%,rgba(11,11,11,.2) 50%,transparent 100%);
+}
+.case-cat{
+  font-family:'Space Mono',monospace;font-size:.56rem;
+  letter-spacing:2px;text-transform:uppercase;color:var(--org);margin-bottom:6px;
+}
+.case-title-txt{
+  font-family:'Montserrat',sans-serif;font-weight:800;
+  font-size:clamp(.95rem,1.8vw,1.3rem);letter-spacing:-.3px;line-height:1.1;
+}
+.case-desc-txt{
+  font-size:.78rem;color:rgba(245,242,237,.5);margin-top:6px;
+  opacity:0;transform:translateY(8px);transition:all .35s;font-weight:300;
+}
+.case-card:hover .case-desc-txt{opacity:1;transform:translateY(0)}
+/* Index número visible */
+.case-num{
+  position:absolute;top:18px;left:20px;
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  color:rgba(255,255,255,.25);letter-spacing:2px;
+}
+/* Badge flecha */
+.case-arrow{
+  position:absolute;top:16px;right:16px;
+  width:36px;height:36px;border-radius:50%;
+  background:var(--org);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;color:#000;
+  opacity:0;transform:scale(.7);transition:all .3s cubic-bezier(.16,1,.3,1);
+}
+.case-card:hover .case-arrow{opacity:1;transform:scale(1)}
+/* Sticker slot circular */
+.case-sticker-slot{
+  position:absolute;bottom:20px;right:20px;
+  width:60px;height:60px;border-radius:50%;
+  border:1.5px dashed rgba(255,92,26,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Mono',monospace;font-size:.4rem;
+  color:var(--org-border);letter-spacing:1px;text-transform:uppercase;text-align:center;
+  transform:rotate(15deg);
+  opacity:0;transition:opacity .3s;
+}
+.case-card:hover .case-sticker-slot{opacity:1}
 
-        .hero-sub {
-            color: var(--muted);
-            font-size: 1rem;
-            max-width: 520px;
-            margin-bottom: 40px;
-            font-weight: 300;
-            line-height: 1.75;
-        }
+/* ── SOBRE ── */
+#sobre{background:#000}
+.sobre-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:0;
+  border:1px solid var(--muted2);border-radius:4px;overflow:hidden;
+}
+.sobre-left{padding:64px 52px;border-right:1px solid var(--muted2)}
+.sobre-left p{color:var(--muted);font-size:.92rem;line-height:1.9;font-weight:300;margin-bottom:18px}
+.sobre-values{list-style:none;margin-top:32px}
+.sobre-values li{
+  padding:14px 0;border-bottom:1px solid var(--muted2);
+  font-size:.88rem;display:flex;align-items:flex-start;gap:12px;
+  color:rgba(245,242,237,.72);
+}
+.sobre-values li:last-child{border-bottom:none}
+.sobre-values li i{color:var(--org);flex-shrink:0;font-size:1rem;margin-top:1px}
+.sobre-right{
+  padding:64px 48px;
+  background:linear-gradient(160deg,rgba(255,92,26,.05) 0%,transparent 60%);
+  position:relative;overflow:hidden;
+}
+.deco-slot-grande{
+  position:absolute;top:36px;right:36px;
+  width:110px;height:110px;border-radius:50%;
+  border:1.5px dashed rgba(255,92,26,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Mono',monospace;font-size:.48rem;
+  color:rgba(255,92,26,.25);text-transform:uppercase;letter-spacing:1px;text-align:center;
+  animation:spin 20s linear infinite;
+}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.sobre-quote{
+  font-family:'Instrument Serif',serif;font-style:italic;
+  font-size:1.2rem;line-height:1.6;color:var(--wht);
+  border-left:2px solid var(--org);padding-left:22px;margin-bottom:36px;
+}
+.sobre-quote strong{color:var(--org);font-style:normal}
+.process-list{display:flex;flex-direction:column}
+.proc-item{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--muted2)}
+.proc-item:last-child{border-bottom:none}
+.proc-n{
+  font-family:'Space Mono',monospace;font-size:.62rem;
+  color:var(--org);width:26px;flex-shrink:0;margin-top:2px;
+}
+.proc-info h4{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.88rem;margin-bottom:4px}
+.proc-info p{font-size:.78rem;color:var(--muted);font-weight:300}
 
-        .hero-actions {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
+/* ── CTA ── */
+.cta-sec{padding:72px 0}
+.cta-inner{
+  border:1px solid var(--muted2);border-radius:4px;
+  padding:80px 72px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:48px;flex-wrap:wrap;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,92,26,.08) 0%,rgba(255,92,26,.02) 50%,transparent 100%);
+}
+.cta-inner::before{
+  content:'DARAMI';position:absolute;right:-10px;bottom:-20px;
+  font-family:'Montserrat',sans-serif;font-weight:900;font-size:9rem;
+  color:rgba(255,255,255,.02);letter-spacing:-4px;line-height:1;
+  pointer-events:none;user-select:none;
+}
+.cta-sticker-slot{
+  position:absolute;top:28px;right:200px;width:76px;height:76px;
+  border-radius:50%;border:1.5px dashed rgba(255,92,26,.22);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Mono',monospace;font-size:.46rem;
+  color:rgba(255,92,26,.28);letter-spacing:1px;text-transform:uppercase;text-align:center;
+  transform:rotate(-12deg);
+}
+.cta-h{
+  font-family:'Montserrat',sans-serif;font-weight:700;
+  font-size:clamp(2rem,4vw,3rem);line-height:.95;letter-spacing:-1.5px;
+  max-width:500px;position:relative;z-index:1;
+}
+.cta-h em{
+  font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;
+  color:var(--org);letter-spacing:-2px;
+}
 
-        .btn-gold {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--accent);
-            color: #000;
-            font-family: 'Syne', sans-serif;
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 16px 28px;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: all 0.3s;
-            box-shadow: 0 0 30px rgba(232,197,71,0.2);
-            min-height: var(--touch-min);
-        }
-        .btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 40px rgba(232,197,71,0.35);
-        }
-        .btn-gold:active { transform: scale(0.98); }
+/* ── FOOTER ── */
+footer{padding:64px 0 36px;border-top:1px solid var(--muted2)}
+.foot-top{
+  display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;
+  margin-bottom:52px;padding-bottom:52px;border-bottom:1px solid var(--muted2);
+}
+.foot-brand .f-logo{
+  font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.7rem;
+  letter-spacing:.5px;color:var(--wht);margin-bottom:14px;display:block;
+}
+.foot-brand .f-logo span{color:var(--org)}
+.foot-brand p{font-size:.82rem;color:var(--muted);line-height:1.75;font-weight:300;max-width:230px;margin-bottom:24px}
+.foot-social-row{display:flex;gap:10px}
+.foot-social-row a{
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid var(--muted2);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted);text-decoration:none;font-size:1rem;
+  transition:color .2s,border-color .2s,background .2s;
+}
+.foot-social-row a:hover{color:var(--org);border-color:var(--org-border);background:var(--org-dim)}
+.foot-col h5{
+  font-family:'Space Mono',monospace;font-size:.6rem;
+  letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin-bottom:20px;
+}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.foot-col ul li{display:flex;align-items:center;gap:8px}
+.foot-col ul li i{font-size:.85rem;color:var(--org);flex-shrink:0}
+.foot-col ul a{
+  color:rgba(245,242,237,.55);text-decoration:none;font-size:.85rem;transition:color .2s;
+}
+.foot-col ul a:hover{color:var(--org)}
+.foot-bottom{
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+}
+.foot-copy{font-size:.7rem;color:rgba(245,242,237,.22);font-family:'Space Mono',monospace}
+.foot-domain{
+  font-family:'Space Mono',monospace;font-size:.65rem;
+  color:var(--org);letter-spacing:2px;
+}
 
-        .btn-ghost {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--text);
-            font-size: 0.95rem;
-            font-weight: 500;
-            text-decoration: none;
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 16px 28px;
-            border-radius: 50px;
-            transition: all 0.3s;
-            min-height: var(--touch-min);
-        }
-        .btn-ghost:hover { border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.04); }
-        .btn-ghost:active { transform: scale(0.98); }
+/* WA FLOAT */
+.wa-float{
+  position:fixed;bottom:28px;right:28px;z-index:700;
+  width:52px;height:52px;background:#25d366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  text-decoration:none;font-size:1.4rem;color:#fff;
+  box-shadow:0 4px 24px rgba(37,211,102,.35);transition:transform .3s;
+}
+.wa-float:hover{transform:scale(1.1)}
 
-        .hero-stats {
-            display: flex;
-            gap: 0;
-            margin-top: 56px;
-            padding-top: 32px;
-            border-top: 1px solid rgba(255,255,255,0.06);
-        }
-        .stat-item {
-            flex: 1;
-            padding-right: 24px;
-            position: relative;
-        }
-        .stat-item:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            height: 32px;
-            width: 1px;
-            background: rgba(255,255,255,0.07);
-        }
-        .stat-item:not(:first-child) { padding-left: 24px; padding-right: 0; }
-        .stat-item:nth-child(2) { padding-left: 24px; padding-right: 24px; }
-        .stat-num {
-            font-family: 'Syne', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--accent);
-            display: block;
-            line-height: 1;
-        }
-        .stat-label { font-size: 0.76rem; color: var(--muted); font-weight: 400; margin-top: 4px; display: block; line-height: 1.3; }
+/* REVEAL */
+.r{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.r.on{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
 
-        /* ── MARQUEE ── */
-        .marquee-wrap {
-            border-top: 1px solid rgba(255,255,255,0.05);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            padding: 16px 0;
-            overflow: hidden;
-            background: var(--bg-2);
-        }
-        .marquee-track {
-            display: flex;
-            gap: 48px;
-            white-space: nowrap;
-            animation: scroll-marquee 22s linear infinite;
-            width: max-content;
-        }
-        @keyframes scroll-marquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
-        .marquee-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.78rem;
-            font-weight: 600;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
-        .marquee-item i { color: var(--accent); font-size: 0.95rem; }
+/* RESPONSIVE */
+@media(max-width:960px){
+  #hero{grid-template-columns:1fr;height:auto;padding-top:100px}
+  .hero-right{height:55vw;border-left:none;border-top:1px solid var(--muted2)}
+  .hero-left{padding:48px 5% 32px}
+  .cases-asym{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .ca-1{grid-column:1/3;grid-row:auto;aspect-ratio:16/8}
+  .ca-2{grid-column:1/2;grid-row:auto;aspect-ratio:4/3}
+  .ca-3{grid-column:2/3;grid-row:auto;aspect-ratio:4/3}
+  .ca-4{grid-column:1/3;grid-row:auto;aspect-ratio:16/8}
+  .sobre-grid{grid-template-columns:1fr}
+  .sobre-left{border-right:none;border-bottom:1px solid var(--muted2)}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .cta-inner{padding:48px 36px}
+  .svc-row{grid-template-columns:56px 1fr 40px;gap:20px}
+  .svc-tags-col{display:none}
+}
+@media(max-width:680px){
+  .nav-links{display:none}
+  .burger{display:flex}
+  #hero{padding-top:72px}
+  .hero-nav-bottom{display:none}
+  .cases-asym{grid-template-columns:1fr}
+  .ca-1,.ca-2,.ca-3,.ca-4{grid-column:1;aspect-ratio:4/3}
+  .foot-top{grid-template-columns:1fr}
+  .cta-inner{padding:36px 24px}
+  .svc-row{grid-template-columns:48px 1fr 36px;gap:14px;padding:22px 0}
+}
 
-        /* ── SECTIONS ── */
-        section { padding: 80px 0; }
+/* ── HERO BG ─────────────────────────────────────────────────────────────
+   Técnica: blur en UN contenedor padre (.lines-layer) en vez de N hijos.
+   El navegador hace 1 sola pasada de blur sobre la textura compuesta.
+   Resultado: mismo look premium con blur real, sin lag.
+───────────────────────────────────────────────────────────────────────── */
 
-        .section-label {
-            display: inline-block;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 14px;
-        }
-        .section-title {
-            font-family: 'Syne', sans-serif;
-            font-size: clamp(1.7rem, 6vw, 3rem);
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 14px;
-            line-height: 1.1;
-        }
-        .section-sub {
-            color: var(--muted);
-            font-size: 0.97rem;
-            max-width: 560px;
-            font-weight: 300;
-            line-height: 1.75;
-            margin-bottom: 48px;
-        }
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+    background: #07070a;
+    isolation: isolate;
+}
 
-        /* ── SERVICIOS ── */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2px;
-            background: rgba(255,255,255,0.04);
-            border-radius: var(--r);
-            overflow: hidden;
-        }
-        .svc-card {
-            background: var(--bg-2);
-            padding: 36px 28px;
-            position: relative;
-            transition: background 0.3s;
-        }
-        .svc-card:hover { background: var(--bg-3); }
-        .svc-card:hover .svc-arrow { transform: translate(4px, -4px); }
+/* ── Glow ambiental naranja — respira suavemente ── */
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 75% 65% at 72% 45%, rgba(255,92,26,.14) 0%, transparent 65%),
+        radial-gradient(ellipse 45% 55% at 18% 75%, rgba(255,72,10,.06) 0%, transparent 60%),
+        radial-gradient(ellipse 35% 40% at 55% 10%, rgba(255,130,40,.05) 0%, transparent 55%);
+    animation: glow-breathe 9s ease-in-out infinite alternate;
+    will-change: opacity;
+}
+@keyframes glow-breathe {
+    from { opacity: .6; }
+    to   { opacity: 1;  }
+}
 
-        .svc-icon {
-            width: 48px; height: 48px;
-            border-radius: 10px;
-            background: var(--accent-dim);
-            border: 1px solid var(--accent-border);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.3rem;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        .svc-card h3 {
-            font-family: 'Syne', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: -0.3px;
-            line-height: 1.25;
-        }
-        .svc-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.7; font-weight: 300; }
-        .svc-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; }
-        .svc-tag {
-            font-size: 0.7rem;
-            color: var(--muted);
-            border: 1px solid rgba(255,255,255,0.08);
-            padding: 4px 10px;
-            border-radius: 50px;
-        }
-        .svc-arrow {
-            position: absolute;
-            top: 28px; right: 28px;
-            font-size: 1rem;
-            color: var(--muted);
-            transition: transform 0.3s;
-        }
-        .svc-card.wide { grid-column: span 2; }
+/* ── Ruido de grano estático ── */
+.hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: .03;
+}
 
-        /* ── PORTAFOLIO ── */
-        #portafolio { background: var(--bg-2); }
+/* ── EL TRUCO: blur en el contenedor padre = 1 sola operación GPU ──
+   En vez de blur en cada línea (N layers), aplicamos el blur a este
+   wrapper y el compositor lo hace todo de una vez. */
+.lines-layer {
+    position: absolute;
+    inset: -40%;
+    filter: blur(32px);
+    will-change: contents;
+}
 
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-        }
-        .port-item {
-            border-radius: var(--r);
-            overflow: hidden;
-            position: relative;
-            aspect-ratio: 4/3;
-            background: var(--bg-3);
-            border: 1px solid rgba(255,255,255,0.05);
-            cursor: pointer;
-        }
-        .port-item:first-child { grid-column: span 2; }
-        .port-img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s ease;
-            filter: brightness(0.7);
-        }
-        .port-item:hover .port-img { transform: scale(1.05); filter: brightness(0.5); }
-        .port-overlay {
-            position: absolute;
-            inset: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
-        }
-        .port-cat {
-            font-size: 0.68rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--accent);
-            margin-bottom: 4px;
-        }
-        .port-title {
-            font-family: 'Syne', sans-serif;
-            font-size: 1rem;
-            font-weight: 700;
-            color: white;
-            line-height: 1.25;
-        }
-        .port-desc {
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.65);
-            margin-top: 6px;
-            opacity: 0;
-            transform: translateY(8px);
-            transition: all 0.3s;
-            font-weight: 300;
-        }
-        .port-item:hover .port-desc { opacity: 1; transform: translateY(0); }
-        .port-placeholder {
-            width: 100%; height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: rgba(255,255,255,0.08);
-            position: absolute;
-            inset: 0;
-        }
+/* ── Líneas base — sin blur propio, sin box-shadow ── */
+.line {
+    position: absolute;
+    width: 420%;
+    left: -160%;
+    border-radius: 999px;
+    will-change: transform;
+}
 
-        /* ── DIFERENCIADOR ── */
-        .diff-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-        .diff-text h2 {
-            font-family: 'Syne', sans-serif;
-            font-size: clamp(1.7rem, 4vw, 2.8rem);
-            font-weight: 800;
-            letter-spacing: -1px;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-        .diff-text p {
-            color: var(--muted);
-            font-size: 0.95rem;
-            line-height: 1.8;
-            font-weight: 300;
-            margin-bottom: 18px;
-        }
+/* Naranja — el color dominante, más saturado que antes */
+.orange {
+    background: linear-gradient(
+        90deg,
+        transparent       0%,
+        rgba(255,80,20,.03)  12%,
+        rgba(255,100,30,.58) 50%,
+        rgba(255,80,20,.03)  88%,
+        transparent       100%
+    );
+}
 
-        .value-list { list-style: none; margin-top: 28px; }
-        .value-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 14px;
-            padding: 14px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            font-size: 0.92rem;
-            font-weight: 400;
-            line-height: 1.5;
-        }
-        .value-list li:last-child { border-bottom: none; }
-        .value-list li i { color: var(--green); font-size: 1rem; flex-shrink: 0; margin-top: 3px; }
+/* Gris cálido — complementa sin competir */
+.gray {
+    background: linear-gradient(
+        90deg,
+        transparent              0%,
+        rgba(150,140,130,.04)   20%,
+        rgba(170,158,145,.20)   50%,
+        rgba(150,140,130,.04)   80%,
+        transparent              100%
+    );
+}
 
-        .diff-visual {
-            background: var(--bg-3);
-            border: 1px solid rgba(255,255,255,0.06);
-            border-radius: 16px;
-            padding: 32px;
-            position: relative;
-            overflow: hidden;
-        }
-        .diff-visual::before {
-            content: '';
-            position: absolute;
-            top: -60px; right: -60px;
-            width: 200px; height: 200px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(232,197,71,0.08), transparent 70%);
-            pointer-events: none;
-        }
-        .diff-quote {
-            font-family: 'Syne', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            line-height: 1.6;
-            margin-bottom: 28px;
-            color: var(--text);
-        }
-        .diff-quote em { color: var(--accent); font-style: normal; }
+/* Oscuro — profundidad entre bandas */
+.dark {
+    background: linear-gradient(
+        90deg,
+        transparent       0%,
+        rgba(0,0,0,.18)  22%,
+        rgba(0,0,0,.62)  50%,
+        rgba(0,0,0,.18)  78%,
+        transparent       100%
+    );
+}
 
-        .process-steps { display: flex; flex-direction: column; gap: 0; }
-        .step {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            padding: 16px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-        .step:last-child { border-bottom: none; }
-        .step-num {
-            font-family: 'Syne', sans-serif;
-            font-size: 0.72rem;
-            font-weight: 800;
-            color: var(--accent);
-            background: var(--accent-dim);
-            border: 1px solid var(--accent-border);
-            width: 30px; height: 30px;
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            flex-shrink: 0;
-        }
-        .step-info h4 {
-            font-family: 'Syne', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 700;
-            margin-bottom: 3px;
-        }
-        .step-info p { font-size: 0.8rem; color: var(--muted); font-weight: 300; }
+/* ── 8 líneas bien distribuidas ── */
+.t1 { height: 120px; top:  4%; }
+.t2 { height:  30px; top: 19%; }
+.t3 { height:  90px; top: 33%; }
+.t4 { height:  30px; top: 47%; }
+.t5 { height: 120px; top: 57%; }
+.t6 { height:  30px; top: 70%; }
+.t7 { height:  90px; top: 82%; }
+.t8 { height: 120px; top: 94%; }
 
-        /* ── CTA BANNER ── */
-        .cta-banner {
-            background: var(--accent);
-            border-radius: 16px;
-            padding: 56px 48px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 40px;
-            flex-wrap: wrap;
-            position: relative;
-            overflow: hidden;
-        }
-        .cta-banner::before {
-            content: '';
-            position: absolute;
-            top: -80px; right: -80px;
-            width: 280px; height: 280px;
-            border-radius: 50%;
-            background: rgba(0,0,0,0.08);
-            pointer-events: none;
-        }
-        .cta-banner h2 {
-            font-family: 'Syne', sans-serif;
-            font-size: clamp(1.5rem, 4vw, 2.4rem);
-            font-weight: 800;
-            color: #000;
-            letter-spacing: -1px;
-            line-height: 1.1;
-            max-width: 480px;
-        }
-        .cta-banner h2 span { opacity: 0.5; }
-        .btn-dark {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: #000;
-            color: var(--accent);
-            font-family: 'Syne', sans-serif;
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 18px 32px;
-            border-radius: 50px;
-            text-decoration: none;
-            white-space: nowrap;
-            transition: all 0.3s;
-            flex-shrink: 0;
-            min-height: var(--touch-min);
-        }
-        .btn-dark:hover { transform: scale(1.04); }
-        .btn-dark:active { transform: scale(0.97); }
+/* ── Keyframes en translate3d — compositor puro, cero paint ── */
+@keyframes d1 {
+    from { transform: rotate(-35deg) translate3d(-380px,  265px, 0); }
+    to   { transform: rotate(-35deg) translate3d( 380px, -265px, 0); }
+}
+@keyframes d2 {
+    from { transform: rotate(-35deg) translate3d( 270px, -190px, 0); }
+    to   { transform: rotate(-35deg) translate3d(-270px,  190px, 0); }
+}
+@keyframes d3 {
+    from { transform: rotate(-35deg) translate3d(-190px,  130px, 0); }
+    to   { transform: rotate(-35deg) translate3d( 190px, -130px, 0); }
+}
 
-        /* ── FOOTER ── */
-        footer {
-            padding: 56px 0 36px;
-            border-top: 1px solid rgba(255,255,255,0.05);
-        }
-        .footer-grid {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .footer-logo {
-            font-family: 'Syne', sans-serif;
-            font-weight: 800;
-            font-size: 1.1rem;
-            text-decoration: none;
-            color: var(--text);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .footer-logo span { color: var(--accent); }
-        .footer-tagline { font-size: 0.8rem; color: var(--muted); margin-top: 5px; font-weight: 300; }
-        .footer-links { display: flex; gap: 24px; list-style: none; }
-        .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.25s; }
-        .footer-links a:hover { color: var(--text); }
-        .footer-socials { display: flex; gap: 12px; }
-        .footer-socials a {
-            width: 40px; height: 40px;
-            border-radius: 50%;
-            border: 1px solid rgba(255,255,255,0.08);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--muted);
-            text-decoration: none;
-            font-size: 1rem;
-            transition: all 0.25s;
-            min-width: var(--touch-min);
-            min-height: var(--touch-min);
-        }
-        .footer-socials a:hover { color: var(--accent); border-color: var(--accent-border); }
-        .footer-copy { font-size: 0.76rem; color: var(--muted); margin-top: 36px; text-align: center; }
+.t1 { animation: d1 30s linear infinite alternate; }
+.t2 { animation: d2 44s linear infinite alternate; }
+.t3 { animation: d3 27s linear infinite alternate; }
+.t4 { animation: d1 50s linear infinite reverse alternate; }
+.t5 { animation: d2 35s linear infinite alternate; }
+.t6 { animation: d3 56s linear infinite alternate; }
+.t7 { animation: d1 40s linear infinite alternate; }
+.t8 { animation: d2 48s linear infinite reverse alternate; }
 
-        /* ── WHATSAPP FLOAT ── */
-        .float-wa {
-            position: fixed;
-            bottom: 24px; right: 20px;
-            width: 56px; height: 56px;
-            background: #25d366;
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.5rem;
-            color: white;
-            text-decoration: none;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
-            transition: transform 0.3s;
-        }
-        .float-wa:hover { transform: scale(1.1); }
-        .float-wa:active { transform: scale(0.95); }
+@media (prefers-reduced-motion: reduce) {
+    .line, .hero-bg::before { animation: none; }
+}
 
-        /* ── REVEAL ── */
-        .reveal { opacity: 0; transform: translateY(24px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-        .reveal-delay-1 { transition-delay: 0.1s; }
-        .reveal-delay-2 { transition-delay: 0.2s; }
-        .reveal-delay-3 { transition-delay: 0.3s; }
+.seo-sec{
+    background:#050505;
+    border-top:1px solid var(--muted2);
+    border-bottom:1px solid var(--muted2);
+}
 
-        /* ══════════════════════════════════════════════
-           RESPONSIVE — TABLET (max 900px)
-        ══════════════════════════════════════════════ */
-        @media (max-width: 900px) {
-            section { padding: 72px 0; }
-            .services-grid { grid-template-columns: 1fr; }
-            .svc-card.wide { grid-column: span 1; }
-            .portfolio-grid { grid-template-columns: 1fr 1fr; }
-            .port-item:first-child { grid-column: span 2; }
-            .diff-grid { grid-template-columns: 1fr; gap: 40px; }
-            .cta-banner { padding: 40px 28px; text-align: center; justify-content: center; }
-        }
+.seo-intro{
+    max-width:700px;
+    color:var(--muted);
+    line-height:1.9;
+    margin-bottom:50px;
+    font-size:.95rem;
+}
 
-        /* ══════════════════════════════════════════════
-           RESPONSIVE — MOBILE (max 680px)
-           All mobile-first optimizations live here
-        ══════════════════════════════════════════════ */
-        @media (max-width: 680px) {
-            :root {
-                --touch-min: 52px;
-            }
+.seo-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
 
-            /* === NAV MOBILE === */
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                height: 100dvh;
-                background: rgba(8,8,8,0.98);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                align-items: center;
-                justify-content: center;
-                gap: 32px;
-                z-index: 200;
-                /* No inset shorthand — top/left/width/height es más confiable cross-browser */
-                overflow: hidden;
-            }
-            .nav-links.open { display: flex; }
-            .nav-links a {
-                font-size: 1.5rem;
-                color: var(--text);
-                padding: 10px 24px;
-                min-height: var(--touch-min);
-                display: flex;
-                align-items: center;
-            }
-            .burger { display: flex; z-index: 300; }
+.seo-card{
+    padding:28px;
+    border:1px solid var(--muted2);
+    background:linear-gradient(
+        180deg,
+        rgba(255,92,26,.04),
+        transparent
+    );
+    transition:
+        transform .3s,
+        border-color .3s;
+}
 
-            /* === HERO MOBILE === */
-            #hero {
-                padding: 88px 0 60px;
-                align-items: flex-start;
-            }
-            .hero-eyebrow {
-                font-size: 0.72rem;
-                padding: 6px 14px;
-                letter-spacing: 0.4px;
-                /* Wrap en mobile sin romper layout */
-                max-width: 100%;
-                white-space: normal;
-                text-align: center;
-            }
-            .hero-title {
-                font-size: clamp(2.4rem, 13vw, 3.6rem);
-                letter-spacing: -1.5px;
-                margin-bottom: 20px;
-            }
-            .hero-sub {
-                font-size: 0.97rem;
-                margin-bottom: 32px;
-                line-height: 1.7;
-            }
-            /* Botones full-width en mobile */
-            .hero-actions {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .btn-gold, .btn-ghost {
-                width: 100%;
-                justify-content: center;
-                padding: 17px 24px;
-                font-size: 0.97rem;
-            }
-            /* Stats compactos y sin separadores raros */
-            .hero-stats {
-                margin-top: 40px;
-                padding-top: 28px;
-                gap: 0;
-            }
-            .stat-num { font-size: 1.6rem; }
-            .stat-label { font-size: 0.7rem; }
-            .stat-item { padding-right: 12px; }
-            .stat-item:not(:first-child) { padding-left: 12px; }
-            .stat-item:nth-child(2) { padding-left: 12px; padding-right: 12px; }
+.seo-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--org-border);
+}
 
-            /* === SERVICIOS MOBILE === */
-            section { padding: 56px 0; }
-            .section-title { font-size: clamp(1.6rem, 8vw, 2.2rem); }
-            .section-sub { font-size: 0.93rem; margin-bottom: 32px; }
+.seo-card i{
+    font-size:1.8rem;
+    color:var(--org);
+    margin-bottom:18px;
+    display:block;
+}
 
-            /* Grid de 1 col en mobile, con separación visible entre cards */
-            .services-grid {
-                grid-template-columns: 1fr;
-                gap: 1px;
-                border-radius: 14px;
-            }
-            .svc-card {
-                padding: 28px 22px;
-                /* Touch feedback */
-                -webkit-tap-highlight-color: transparent;
-            }
-            .svc-card:active { background: var(--bg-3); }
-            .svc-icon { width: 44px; height: 44px; font-size: 1.2rem; margin-bottom: 16px; }
-            .svc-card h3 { font-size: 1.05rem; }
-            .svc-card p { font-size: 0.87rem; }
-            .svc-arrow { top: 22px; right: 22px; }
+.seo-card h3{
+    font-family:'Montserrat',sans-serif;
+    font-size:1.1rem;
+    margin-bottom:10px;
+}
 
-            /* === PORTAFOLIO MOBILE === */
-            /* 1 columna, sin los grids extraños */
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-                gap: 10px;
-            }
-            .port-item:first-child { grid-column: span 1; }
-            .port-item { aspect-ratio: 16/9; }
-            /* Mostrar overlay siempre en mobile (no hay hover) */
-            .port-desc {
-                opacity: 1;
-                transform: translateY(0);
-                font-size: 0.8rem;
-            }
-            .port-overlay { padding: 16px 18px; }
-            .port-title { font-size: 0.95rem; }
+.seo-card p{
+    color:var(--muted);
+    font-size:.82rem;
+    line-height:1.8;
+}
 
-            /* === DIFERENCIADOR MOBILE === */
-            .diff-grid { grid-template-columns: 1fr; gap: 32px; }
-            .diff-text h2 { font-size: clamp(1.55rem, 8vw, 2rem); }
-            .diff-visual { padding: 24px 20px; border-radius: 14px; }
-            .diff-quote { font-size: 0.95rem; margin-bottom: 20px; }
-            .value-list li { font-size: 0.88rem; gap: 12px; padding: 13px 0; }
+@media(max-width:900px){
+    .seo-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
 
-            /* === CTA BANNER MOBILE === */
-            .cta-banner {
-                padding: 36px 22px;
-                border-radius: 14px;
-                flex-direction: column;
-                gap: 24px;
-                text-align: center;
-            }
-            .cta-banner h2 {
-                font-size: clamp(1.4rem, 7vw, 1.8rem);
-                letter-spacing: -0.5px;
-            }
-            .btn-dark {
-                width: 100%;
-                justify-content: center;
-                padding: 17px 24px;
-            }
-
-            /* === FOOTER MOBILE === */
-            footer { padding: 48px 0 32px; }
-            .footer-grid {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 28px;
-            }
-            .footer-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px 24px;
-            }
-            .footer-links a {
-                font-size: 0.9rem;
-                padding: 8px 0;
-                min-height: var(--touch-min);
-                display: inline-flex;
-                align-items: center;
-            }
-            .footer-socials { gap: 16px; justify-content: center; }
-            .footer-copy { margin-top: 28px; font-size: 0.73rem; }
-
-            /* Float WA position para no tapar contenido */
-            .float-wa {
-                bottom: 20px;
-                right: 16px;
-                width: 52px; height: 52px;
-                font-size: 1.4rem;
-            }
-
-            /* Marquee ligeramente más rápido en mobile */
-            .marquee-track { animation-duration: 18s; }
-            .marquee-wrap { padding: 14px 0; }
-        }
-
-        /* ── EXTRA SMALL (max 380px) ── */
-        @media (max-width: 380px) {
-            .hero-title { font-size: clamp(2.1rem, 14vw, 2.8rem); letter-spacing: -1px; }
-            .hero-eyebrow { font-size: 0.65rem; }
-            .stat-num { font-size: 1.4rem; }
-            .stat-label { font-size: 0.65rem; }
-            .wrap { width: 94%; }
-        }
-    </style>
+@media(max-width:600px){
+    .seo-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header id="header">
-    <div class="wrap">
-        <nav>
-            <a href="#" class="logo">
-                <img src="darami_logo.svg" alt="Darami logo" style="height: .7rem;">
-                Darami<span>.</span>
-            </a>
-            <!-- Desktop links inline, mobile overlay is #mobile-menu below -->
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#proceso">Proceso</a></li>
-                <li><a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20quiero%20cotizar." target="_blank" class="nav-cta">Cotizar ↗</a></li>
-            </ul>
-            <div class="burger" id="burger" role="button" aria-label="Menú" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-    </div>
+<!-- NAV -->
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="/" class="nav-logo">
+        <div class="logo-slot"><img src="img/logo_darami.svg" width="32" alt="Logo Darami" style="margin-top:10px;"></div>
+        darami<span>.</span>
+      </a>
+      <ul class="nav-links" id="desk-nav">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="sobre-mi">Sobre mí</a></li>
+        <li><a href="desarrollo-web-mexico">Desarrollo web</a></li>
+        <li><a href="branding-negocios">Branding</a></li>
+        <li><a href="automatizacion-empresas">Automatización</a></li>
+        <li><a href="casos">Casos</a></li>
+        <li><a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20quiero%20cotizar." target="_blank" class="nav-cta">Cotizar</a></li>
+      </ul>
+      <button class="burger" id="brg" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
 </header>
 
-<!-- MOBILE MENU OVERLAY — fuera del header para evitar stacking context roto -->
-<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <a href="#servicios">Servicios</a>
-    <a href="#portafolio">Portafolio</a>
-    <a href="#proceso">Proceso</a>
-    <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20quiero%20cotizar." target="_blank" class="nav-cta-mobile">Cotizar ↗</a>
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mob-nav">
+  <a href="#servicios">SERVICIOS</a>
+  <a href="#casos">CASOS</a>
+  <a href="#sobre">SOBRE MÍ</a>
+  <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20quiero%20cotizar." target="_blank" style="color:var(--org)">COTIZAR ↗</a>
 </div>
 
 <!-- HERO -->
 <section id="hero">
-    <div class="hero-glow"></div>
-    <div class="hero-glow-2"></div>
-    <div class="wrap">
-        <div class="hero-eyebrow">Disponible en toda la República · Base en Michoacán</div>
-        <h1 class="hero-title">
-            <span class="line reveal">Tu negocio,</span>
-            <span class="line reveal reveal-delay-1"><em>visto diferente.</em></span>
-        </h1>
-        <p class="hero-sub reveal reveal-delay-2">
-            Diseño, desarrollo web, edición de video y automatización para negocios que quieren crecer en serio. Resultados reales, trato directo.
-        </p>
-        <div class="hero-actions reveal reveal-delay-3">
-            <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20quiero%20cotizar%20un%20proyecto." target="_blank" class="btn-gold">
-                <i class="bi bi-whatsapp"></i> Cotizar por WhatsApp
-            </a>
-            <a href="#portafolio" class="btn-ghost">Ver portafolio <i class="bi bi-arrow-down-right"></i></a>
-        </div>
-        <div class="hero-stats reveal">
-            <div class="stat-item">
-                <span class="stat-num">+30</span>
-                <span class="stat-label">Proyectos entregados</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-num">48h</span>
-                <span class="stat-label">Tiempo promedio de entrega</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-num">100%</span>
-                <span class="stat-label">Clientes satisfechos</span>
-            </div>
-        </div>
+<div class="hero-bg">
+  <!-- blur en el padre = 1 sola operación GPU -->
+  <div class="lines-layer">
+    <div class="line orange t1"></div>
+    <div class="line dark   t2"></div>
+    <div class="line gray   t3"></div>
+    <div class="line orange t4"></div>
+    <div class="line dark   t5"></div>
+    <div class="line orange t6"></div>
+    <div class="line gray   t7"></div>
+    <div class="line orange t8"></div>
+  </div>
+</div>
+  <div class="hero-left">
+    <div class="hero-eyebrow r">Disponible · Michoacán → México</div>
+    <h1>
+      <div class="hero-name r d1">Daniel</div>
+      <div class="hero-name-sub r d2">Ramírez.</div>
+    </h1>
+    <p class="hero-desc r d2">
+      Diseño, código y movimiento para negocios que no quieren parecerse a nadie más. Sistemas reales, identidad real, sin agencias.
+    </p>
+    <div class="hero-ctas r d3">
+      <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20quiero%20cotizar%20un%20proyecto." target="_blank" class="btn-org">
+        <i class="bi bi-whatsapp"></i> Ver disponibilidad
+      </a>
+      <a href="#casos" class="btn-outline">Explorar trabajo</a>
     </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-slot">
+      <video autoplay muted loop playsinline style="width:50%;height:auto">
+        <source src="Composition 1.webm" type="video/webm">
+      </video>
+    </div>
+    
+  </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-    <div class="marquee-track">
-        <span class="marquee-item"><i class="bi bi-camera-video-fill"></i> Edición de Video</span>
-        <span class="marquee-item"><i class="bi bi-palette-fill"></i> Diseño Gráfico</span>
-        <span class="marquee-item"><i class="bi bi-laptop-fill"></i> Desarrollo Web</span>
-        <span class="marquee-item"><i class="bi bi-robot"></i> Automatización IA</span>
-        <span class="marquee-item"><i class="bi bi-instagram"></i> Contenido para Redes</span>
-        <span class="marquee-item"><i class="bi bi-upc-scan"></i> Punto de Venta</span>
-        <span class="marquee-item"><i class="bi bi-whatsapp"></i> Bots de WhatsApp</span>
-        <span class="marquee-item"><i class="bi bi-graph-up-arrow"></i> SEO Local</span>
-        <!-- duplicado para loop -->
-        <span class="marquee-item"><i class="bi bi-camera-video-fill"></i> Edición de Video</span>
-        <span class="marquee-item"><i class="bi bi-palette-fill"></i> Diseño Gráfico</span>
-        <span class="marquee-item"><i class="bi bi-laptop-fill"></i> Desarrollo Web</span>
-        <span class="marquee-item"><i class="bi bi-robot"></i> Automatización IA</span>
-        <span class="marquee-item"><i class="bi bi-instagram"></i> Contenido para Redes</span>
-        <span class="marquee-item"><i class="bi bi-upc-scan"></i> Punto de Venta</span>
-        <span class="marquee-item"><i class="bi bi-whatsapp"></i> Bots de WhatsApp</span>
-        <span class="marquee-item"><i class="bi bi-graph-up-arrow"></i> SEO Local</span>
+<section id="seo-services" class="sec seo-sec">
+    <div class="wrap">
+
+        <span class="mono-label r">/ Servicios digitales</span>
+
+        <h2 class="big-title r d1">
+            Desarrollo web, branding y
+            <em>automatización.</em>
+        </h2>
+
+        <p class="seo-intro r d2">
+            Ayudo a negocios en México a crecer mediante páginas web,
+            identidad visual, automatización de procesos y sistemas
+            personalizados diseñados para generar resultados reales.
+        </p>
+
+        <div class="seo-grid r d3">
+
+            <article class="seo-card">
+                <i class="bi bi-window-stack"></i>
+                <h3>Desarrollo Web</h3>
+                <p>
+                    Landing pages, sitios corporativos, catálogos,
+                    sistemas administrativos y plataformas personalizadas.
+                </p>
+            </article>
+
+            <article class="seo-card">
+                <i class="bi bi-palette2"></i>
+                <h3>Branding & Diseño</h3>
+                <p>
+                    Logotipos, identidad visual, contenido para redes
+                    sociales y materiales promocionales.
+                </p>
+            </article>
+
+            <article class="seo-card">
+                <i class="bi bi-cpu"></i>
+                <h3>Automatización</h3>
+                <p>
+                    Bots de WhatsApp, inventarios, puntos de venta,
+                    procesos automatizados e integración con IA.
+                </p>
+            </article>
+
+            <article class="seo-card">
+                <i class="bi bi-graph-up-arrow"></i>
+                <h3>SEO</h3>
+                <p>
+                    Optimización técnica, velocidad, indexación y
+                    posicionamiento para aparecer en Google.
+                </p>
+            </article>
+
+        </div>
+
     </div>
-</div>
+</section>
 
 <!-- SERVICIOS -->
-<section id="servicios">
-    <div class="wrap">
-        <span class="section-label reveal">Lo que hago</span>
-        <h2 class="section-title reveal">Soluciones digitales<br>a medida</h2>
-        <p class="section-sub reveal">Desde un reel que se viraliza hasta el sistema que automatiza tu negocio. Todo bajo un mismo techo, sin agencias de por medio.</p>
+<section id="servicios" class="sec">
+  <div class="wrap">
+    <span class="mono-label r">/ Lo que hago</span>
+    <h2 class="big-title r d1">Soluciones que<br><em>mueven</em> negocios.</h2>
 
-        <div class="services-grid reveal">
-            <div class="svc-card">
-                <i class="bi bi-arrow-up-right svc-arrow"></i>
-                <div class="svc-icon"><i class="bi bi-palette-fill"></i></div>
-                <h3>Diseño & Identidad Visual</h3>
-                <p>Logos, flyers, posts, stories, menús digitales y branding completo. Diseño que se ve profesional y vende desde el primer segundo.</p>
-                <div class="svc-tags">
-                    <span class="svc-tag">Canva Pro</span>
-                    <span class="svc-tag">Affinity</span>
-                    <span class="svc-tag">ibisPaint</span>
-                    <span class="svc-tag">Identidad de marca</span>
-                </div>
-            </div>
-            <div class="svc-card">
-                <i class="bi bi-arrow-up-right svc-arrow"></i>
-                <div class="svc-icon"><i class="bi bi-camera-video-fill"></i></div>
-                <h3>Producción & Edición de Video</h3>
-                <p>Reels, TikToks, videos promocionales y contenido para redes. Grabación con iPhone 16 + edición profesional en DaVinci Resolve o CapCut. Entrega en 24h.</p>
-                <div class="svc-tags">
-                    <span class="svc-tag">Reels / TikTok</span>
-                    <span class="svc-tag">DaVinci Resolve</span>
-                    <span class="svc-tag">CapCut</span>
-                    <span class="svc-tag">Video promocional</span>
-                </div>
-            </div>
-            <div class="svc-card">
-                <i class="bi bi-arrow-up-right svc-arrow"></i>
-                <div class="svc-icon"><i class="bi bi-window-fullscreen"></i></div>
-                <h3>Desarrollo Web</h3>
-                <p>Landing pages, sitios corporativos y menús digitales con código limpio, rápido y optimizado para Google. Tus clientes te encuentran, tú te enfocas en vender.</p>
-                <div class="svc-tags">
-                    <span class="svc-tag">HTML / CSS / JS</span>
-                    <span class="svc-tag">PHP · MySQL · React Native</span>
-                    <span class="svc-tag">SEO Local</span>
-                    <span class="svc-tag">Google Maps</span>
-                </div>
-            </div>
-            <div class="svc-card">
-                <i class="bi bi-arrow-up-right svc-arrow"></i>
-                <div class="svc-icon"><i class="bi bi-robot"></i></div>
-                <h3>Automatización & Sistemas</h3>
-                <p>Bots de WhatsApp que atienden solos, sistemas de punto de venta, inventarios y paneles de administración. Deja de hacer lo manual, empieza a escalar.</p>
-                <div class="svc-tags">
-                    <span class="svc-tag">Bot WhatsApp</span>
-                    <span class="svc-tag">Punto de venta</span>
-                    <span class="svc-tag">Base de datos</span>
-                    <span class="svc-tag">IA integrada</span>
-                </div>
-            </div>
-        </div>
+    <!-- Imagen flotante hover -->
+    <div class="svc-hover-img" id="svcImg">
+      <img id="svcImgEl" src="" alt="">
+      <span class="svc-img-label" id="svcImgLabel"></span>
     </div>
+
+    <div class="svc-list r d2">
+      <div class="svc-row"
+        data-img="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&q=80"
+        data-label="Diseño & Branding">
+        <span class="svc-num">01</span>
+        <div class="svc-main">
+          <h3>Identidad visual & diseño</h3>
+          <p>Logos, branding completo, flyers, banners, stories y piezas para redes. Diseño que posiciona antes de que lean una palabra.</p>
+        </div>
+        <div class="svc-tags-col">
+          <span class="tag">Branding</span>
+          <span class="tag">Logo</span>
+          <span class="tag">RRSS</span>
+          <span class="tag">Canva Pro</span>
+        </div>
+        <span class="svc-arr">↗</span>
+      </div>
+      <div class="svc-row"
+        data-img="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&q=80"
+        data-label="Video & Motion">
+        <span class="svc-num">02</span>
+        <div class="svc-main">
+          <h3>Edición de video & Motion Graphics</h3>
+          <p>Reels, TikToks, videos promo y motion graphics. Producción con iPhone 16, edición en CapCut y Cavalry. Entrega 24–48h.</p>
+        </div>
+        <div class="svc-tags-col">
+          <span class="tag">Reels</span>
+          <span class="tag">TikTok</span>
+          <span class="tag">CapCut</span>
+          <span class="tag">Cavalry</span>
+        </div>
+        <span class="svc-arr">↗</span>
+      </div>
+      <div class="svc-row"
+        data-img="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+        data-label="Desarrollo Web">
+        <span class="svc-num">03</span>
+        <div class="svc-main">
+          <h3>Sistemas web & Apps nativas</h3>
+          <p>Landing pages a sistemas complejos con bases de datos, paneles admin y apps móviles nativas. Código limpio y escalable.</p>
+        </div>
+        <div class="svc-tags-col">
+          <span class="tag">Laravel</span>
+          <span class="tag">React Native</span>
+          <span class="tag">PHP/MySQL</span>
+          <span class="tag">SEO</span>
+        </div>
+        <span class="svc-arr">↗</span>
+      </div>
+      <div class="svc-row"
+        data-img="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80"
+        data-label="Automatización">
+        <span class="svc-num">04</span>
+        <div class="svc-main">
+          <h3>Automatización & IA</h3>
+          <p>Bots de WhatsApp, puntos de venta, inventarios y flujos que reemplazan lo manual. Tu negocio trabaja aunque no estés.</p>
+        </div>
+        <div class="svc-tags-col">
+          <span class="tag">Bot WA</span>
+          <span class="tag">POS</span>
+          <span class="tag">IA</span>
+          <span class="tag">Notion API</span>
+        </div>
+        <span class="svc-arr">↗</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- PORTAFOLIO -->
-<section id="portafolio">
-    <div class="wrap">
-        <span class="section-label reveal">Trabajos recientes</span>
-        <h2 class="section-title reveal">Resultados que<br>hablan solos</h2>
-        <p class="section-sub reveal">Proyectos reales para negocios en Michoacán y más allá.</p>
-
-        <div class="portfolio-grid reveal">
-            <div class="port-item">
-                <a href="portfolio-marval">
-                <div class="port-placeholder"><i class="bi bi-cup-hot-fill"></i></div>
-                <img class="port-img" src="2.png" alt="Marval página desktop">
-                <div class="port-overlay">
-                    <span class="port-cat">Desarrollo Web · Diseño</span>
-                    <div class="port-title">Marval Resortes — Sitio Web Completo</div>
-                    <p class="port-desc">Página de presentación con catálogo web.</p>
-                </div>
-                </a>
-            </div>
-            <div class="port-item">
-                <div class="port-placeholder"><i class="bi bi-music-note-beamed"></i></div>
-                <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=600&q=80" alt="Diseño antro" class="port-img">
-                <div class="port-overlay">
-                    <span class="port-cat">Diseño Gráfico</span>
-                    <div class="port-title">Flyers y Stories — Antro local</div>
-                    <p class="port-desc">Paquete mensual para redes sociales.</p>
-                </div>
-            </div>
-            <div class="port-item">
-                <div class="port-placeholder"><i class="bi bi-graph-up"></i></div>
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Sistema admin" class="port-img">
-                <div class="port-overlay">
-                    <span class="port-cat">Sistema / Automatización</span>
-                    <div class="port-title">Panel de Administración</div>
-                    <p class="port-desc">Inventario y punto de venta a medida.</p>
-                </div>
-            </div>
-        </div>
+<!-- CASOS -->
+<section id="casos" class="sec" style="padding-top:80px;background:#000">
+  <div class="wrap">
+    <div class="cases-header">
+      <div>
+        <span class="mono-label r">/ Trabajo reciente</span>
+        <h2 class="big-title r d1"><em>Resultados</em><br>que hablan solos.</h2>
+      </div>
+      <a href="#" class="btn-outline r" style="align-self:flex-end">
+        Ver todos <i class="bi bi-arrow-up-right"></i>
+      </a>
     </div>
+
+    <div class="cases-asym">
+      <!-- Card 1 — grande izquierda -->
+      <a class="case-card ca-1 r" href="portfolio-marval">
+        <div class="case-img-slot">
+          <span class="case-placeholder-icon">⬡</span>
+          <img src="2.png" alt="Marval Resortes">
+        </div>
+        <div class="case-info">
+          <span class="case-cat">Desarrollo Web · Diseño</span>
+          <div class="case-title-txt">Marval Resortes</div>
+          <p class="case-desc-txt">Sitio corporativo + catálogo digital para empresa industrial de resortes.</p>
+        </div>
+        <span class="case-num">01</span>
+        <div class="case-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        <div class="case-sticker-slot">STICKER</div>
+      </a>
+
+      <!-- Card 2 — tall derecho -->
+      <a class="case-card ca-2 r d1" href="#">
+        <div class="case-img-slot">
+          <span class="case-placeholder-icon">◈</span>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Kashito">
+        </div>
+        <div class="case-info">
+          <span class="case-cat">SaaS · EdTech · Laravel</span>
+          <div class="case-title-txt">Kashito — Finanzas</div>
+          <p class="case-desc-txt">App educativa de finanzas personales. 1er lugar CBTis.</p>
+        </div>
+        <span class="case-num">02</span>
+        <div class="case-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        <div class="case-sticker-slot">STICKER</div>
+      </a>
+
+      <!-- Card 3 — tall izquierda -->
+      <a class="case-card ca-3 r d1" href="#">
+        <div class="case-img-slot">
+          <span class="case-placeholder-icon">◉</span>
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&q=80" alt="Señor Bunny">
+        </div>
+        <div class="case-info">
+          <span class="case-cat">Branding · Identidad</span>
+          <div class="case-title-txt">Señor Bunny</div>
+          <p class="case-desc-txt">Marca completa, logotipo y piezas de marketing.</p>
+        </div>
+        <span class="case-num">03</span>
+        <div class="case-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        <div class="case-sticker-slot">STICKER</div>
+      </a>
+
+      <!-- Card 4 — wide derecho -->
+      <a class="case-card ca-4 r d2" href="#">
+        <div class="case-img-slot">
+          <span class="case-placeholder-icon">▲</span>
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Panel admin">
+        </div>
+        <div class="case-info">
+          <span class="case-cat">Sistema · Automatización</span>
+          <div class="case-title-txt">Panel de Administración</div>
+          <p class="case-desc-txt">Inventario y punto de venta a medida para negocio local en Michoacán.</p>
+        </div>
+        <span class="case-num">04</span>
+        <div class="case-arrow"><i class="bi bi-arrow-up-right"></i></div>
+        <div class="case-sticker-slot">STICKER</div>
+      </a>
+    </div>
+  </div>
 </section>
 
-<!-- DIFERENCIADOR / PROCESO -->
-<section id="proceso">
-    <div class="wrap">
-        <div class="diff-grid">
-            <div class="diff-text">
-                <span class="section-label reveal">¿Por qué yo?</span>
-                <h2 class="reveal">Entiendo tu negocio,<br>no solo el código.</h2>
-                <p class="reveal">Muchos diseñadores hacen cosas bonitas. Muchos programadores hacen cosas que funcionan. Yo hago las dos — y además entiendo de ventas, de clientes y de lo que realmente mueve un negocio en México.</p>
-                <p class="reveal">Atiendo desde Zitácuaro a negocios en toda la República. Entregas rápidas, comunicación directa y sin intermediarios.</p>
-                <ul class="value-list reveal">
-                    <li><i class="bi bi-check-circle-fill"></i><span>Trato directo conmigo, sin agencias ni intermediarios.</span></li>
-                    <li><i class="bi bi-check-circle-fill"></i><span>Entrega en 24–72 horas para proyectos urgentes.</span></li>
-                    <li><i class="bi bi-check-circle-fill"></i><span>Precio justo para el mercado mexicano.</span></li>
-                    <li><i class="bi bi-check-circle-fill"></i><span>Soporte post-entrega incluido.</span></li>
-                    <li><i class="bi bi-check-circle-fill"></i><span>Trabajo remoto para toda la República Mexicana.</span></li>
-                </ul>
-            </div>
-            <div class="diff-visual reveal">
-                <p class="diff-quote">"No busco clientes de una sola vez. Busco ser <em>el aliado digital</em> de tu negocio a largo plazo."</p>
-                <div class="process-steps">
-                    <div class="step">
-                        <div class="step-num">01</div>
-                        <div class="step-info">
-                            <h4>Me cuentas tu idea</h4>
-                            <p>Por WhatsApp, sin formularios raros ni esperas.</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">02</div>
-                        <div class="step-info">
-                            <h4>Te mando propuesta</h4>
-                            <p>Precio claro, tiempo de entrega definido.</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">03</div>
-                        <div class="step-info">
-                            <h4>Arrancamos</h4>
-                            <p>Actualizaciones constantes hasta que quede perfecto.</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-num">04</div>
-                        <div class="step-info">
-                            <h4>Entrega y soporte</h4>
-                            <p>Tu proyecto en mano, con acompañamiento incluido.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- SOBRE -->
+<section id="sobre" class="sec">
+  <div class="wrap">
+    <span class="mono-label r">/ ¿Por qué yo?</span>
+    <h2 class="big-title r d1" style="margin-bottom:40px">Entiendo tu negocio,<br><em>no solo el código.</em></h2>
+    <div class="sobre-grid r d2">
+      <div class="sobre-left">
+        <p>Muchos diseñadores hacen cosas bonitas. Muchos programadores hacen cosas que funcionan. Yo hago las dos — y entiendo de ventas, clientes y lo que realmente mueve negocios en México.</p>
+        <p>Desde Zitácuaro, Michoacán para toda la República. Trato directo, entregas reales, sin intermediarios.</p>
+        <ul class="sobre-values">
+          <li><i class="bi bi-check-circle-fill"></i> Trato directo conmigo — sin agencias ni intermediarios.</li>
+          <li><i class="bi bi-lightning-charge-fill"></i> Entregas en 24–72h para proyectos urgentes.</li>
+          <li><i class="bi bi-currency-exchange"></i> Precio justo para el mercado mexicano.</li>
+          <li><i class="bi bi-headset"></i> Soporte post-entrega incluido en cada proyecto.</li>
+          <li><i class="bi bi-globe-americas"></i> Trabajo remoto para toda la República Mexicana.</li>
+        </ul>
+      </div>
+      <div class="sobre-right">
+        <div class="deco-slot-grande">STICKER<br>CIRCULAR</div>
+        <p class="sobre-quote">
+          "No busco clientes de una sola vez. Quiero ser <strong>el aliado digital permanente</strong> de tu negocio."
+        </p>
+        <div class="process-list">
+          <div class="proc-item">
+            <span class="proc-n">01</span>
+            <div class="proc-info"><h4>Me cuentas tu idea</h4><p>Por WhatsApp, sin formularios ni esperas.</p></div>
+          </div>
+          <div class="proc-item">
+            <span class="proc-n">02</span>
+            <div class="proc-info"><h4>Te mando propuesta</h4><p>Precio claro, tiempo de entrega definido.</p></div>
+          </div>
+          <div class="proc-item">
+            <span class="proc-n">03</span>
+            <div class="proc-info"><h4>Arrancamos</h4><p>Actualizaciones constantes hasta que quede perfecto.</p></div>
+          </div>
+          <div class="proc-item">
+            <span class="proc-n">04</span>
+            <div class="proc-info"><h4>Entrega y soporte</h4><p>Tu proyecto listo, con acompañamiento incluido.</p></div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- CTA BANNER -->
-<section style="padding: 56px 0;">
-    <div class="wrap">
-        <div class="cta-banner reveal">
-            <h2>¿Listo para dar el siguiente paso? <span>Hablemos hoy.</span></h2>
-            <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20quiero%20cotizar%20un%20proyecto." target="_blank" class="btn-dark">
-                <i class="bi bi-whatsapp"></i> Escribir por WhatsApp
-            </a>
-        </div>
+<!-- CTA -->
+<div class="cta-sec">
+  <div class="wrap">
+    <div class="cta-inner r">
+      <div class="cta-sticker-slot">STICKER</div>
+      <h2 class="cta-h">¿Listo para dar<br>el siguiente paso?<br><em>Hablemos hoy.</em></h2>
+      <a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20quiero%20cotizar%20un%20proyecto." target="_blank" class="btn-org" style="font-size:.9rem;padding:18px 36px">
+        <i class="bi bi-whatsapp"></i> Escribir por WhatsApp
+      </a>
     </div>
+  </div>
+</div>
+
+<section class="wrap" style="padding-bottom:80px;">
+    <h2 style="display:none;">
+        Darami, Daniel Ramírez Valencia
+    </h2>
+
+    <p class="seo-intro">
+        Darami es el estudio independiente de Daniel Ramírez Valencia,
+        desarrollador web, diseñador y creador de sistemas digitales
+        ubicado en Zitácuaro, Michoacán, con clientes en toda la República Mexicana.
+    </p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <div class="wrap">
-        <div class="footer-grid">
-            <div>
-                <a href="#" class="footer-logo">
-                    <img src="darami_logo.svg" alt="Darami logo" style="height: .7rem;">
-                    Darami<span>.</span>
-                </a>
-                <p class="footer-tagline">Zitácuaro, Michoacán · Toda la República Mexicana</p>
-            </div>
-            <ul class="footer-links">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li><a href="#proceso">Proceso</a></li>
-            </ul>
-            <div class="footer-socials">
-                <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" title="TikTok"><i class="bi bi-tiktok"></i></a>
-                <a href="https://wa.me/5217151363503" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
-            </div>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="f-logo">darami<span>.</span></span>
+        <p>Diseño, desarrollo y automatización para negocios en México que quieren crecer en serio.</p>
+        <div class="foot-social-row">
+          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" title="TikTok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://wa.me/5217151363503" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" title="Behance"><i class="bi bi-behance"></i></a>
         </div>
-        <p class="footer-copy">© 2026 Daniel Ramírez Valencia. Todos los derechos reservados.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Navegación</h5>
+        <ul>
+          <li><i class="bi bi-arrow-right-short"></i><a href="/">Inicio</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="sobre-mi">Sobre mí</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="desarrollo-web-mexico">Desarrollo web</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="branding-negocios">Branding</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="automatizacion-empresas">Automatización</a></li>
+          <li><i class="bi bi-arrow-right-short"></i><a href="casos">Casos de estudio</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Contacto</h5>
+        <ul>
+          <li><i class="bi bi-whatsapp"></i><a href="https://wa.me/5217151363503" target="_blank">+52 715 136 3503</a></li>
+          <li><i class="bi bi-instagram"></i><a href="https://instagram.com/daaarami" target="_blank">@daaarami</a></li>
+          <li><i class="bi bi-github"></i><a href="https://github.com/daarami" target="_blank">github.com/daarami</a></li>
+          <li><i class="bi bi-geo-alt"></i><a href="https://maps.google.com/?q=Zit%C3%A1cuaro,+Michoac%C3%A1n" target="_blank">Zitácuaro, Michoacán</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 DANIEL RAMÍREZ VALENCIA · TODOS LOS DERECHOS RESERVADOS</span>
+      <span class="foot-domain">darami.xyz</span>
+    </div>
+  </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20quiero%20cotizar." class="float-wa" target="_blank" title="Cotizar por WhatsApp" aria-label="Cotizar por WhatsApp">
-    <i class="bi bi-whatsapp"></i>
+<a href="https://wa.me/5217151363503?text=Hola%20Daniel,%20vi%20tu%20página%20y%20quiero%20cotizar." class="wa-float" target="_blank" title="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
 </a>
 
 <script>
-    // Scroll header
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-        header.classList.toggle('scrolled', window.scrollY > 40);
-    }, { passive: true });
+// Header
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>50),{passive:true});
 
-    // Burger menu — usa #mobile-menu que está fuera del header
-    const burger = document.getElementById('burger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const burgerSpans = burger.querySelectorAll('span');
+// Burger
+const brg=document.getElementById('brg');
+const mobNav=document.getElementById('mob-nav');
+brg.addEventListener('click',()=>{
+  const open=mobNav.classList.toggle('open');
+  brg.classList.toggle('open',open);
+  document.body.style.overflow=open?'hidden':'';
+});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mobNav.classList.remove('open');
+  brg.classList.remove('open');
+  document.body.style.overflow='';
+}));
 
-    function openMenu() {
-        mobileMenu.classList.add('open');
-        mobileMenu.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-        burger.setAttribute('aria-expanded', 'true');
-        burgerSpans[0].style.transform = 'translateY(7px) rotate(45deg)';
-        burgerSpans[1].style.opacity = '0';
-        burgerSpans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
-    }
+// Reveal
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}});
+},{threshold:.07,rootMargin:'0px 0px -28px 0px'});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
 
-    function closeMenu() {
-        mobileMenu.classList.remove('open');
-        mobileMenu.setAttribute('aria-hidden', 'true');
-        document.body.style.overflow = '';
-        burger.setAttribute('aria-expanded', 'false');
-        burgerSpans[0].style.transform = '';
-        burgerSpans[1].style.opacity = '';
-        burgerSpans[2].style.transform = '';
-    }
+// Servicios hover image
+const svcImg=document.getElementById('svcImg');
+const svcImgEl=document.getElementById('svcImgEl');
+const svcImgLabel=document.getElementById('svcImgLabel');
+let mouseX=0,mouseY=0;
 
-    burger.addEventListener('click', () => {
-        mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
-    });
+document.querySelectorAll('.svc-row').forEach(row=>{
+  row.addEventListener('mouseenter',()=>{
+    svcImgEl.src=row.dataset.img||'';
+    svcImgLabel.textContent=row.dataset.label||'';
+    svcImg.classList.add('visible');
+  });
+  row.addEventListener('mouseleave',()=>svcImg.classList.remove('visible'));
+});
 
-    mobileMenu.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', closeMenu);
-    });
-
-    // Scroll reveal — con threshold menor para mobile
-    const isMobile = window.innerWidth <= 680;
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: isMobile ? 0.04 : 0.08,
-        rootMargin: isMobile ? '0px 0px -20px 0px' : '0px 0px -40px 0px'
-    });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.addEventListener('mousemove',e=>{
+  mouseX=e.clientX;mouseY=e.clientY;
+  svcImg.style.left=(mouseX+24)+'px';
+  svcImg.style.top=(mouseY-110)+'px';
+});
 </script>
 </body>
 </html>
